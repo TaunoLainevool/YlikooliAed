@@ -1407,6 +1407,7 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 79d22c8417a764e4bbce8841ad8bc1e2, type: 2}
   plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
   replacementNPC: {fileID: 0}
+  movementDisabler: {fileID: 571135305}
 --- !u!212 &119074560
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4142,7 +4143,6 @@ MonoBehaviour:
   portraitImage: {fileID: 1945666638}
   choiceContainer: {fileID: 1148453260}
   choiceButtonPrefab: {fileID: 1331717057241492465, guid: ba25524e8cc9d0a4881b79efdc1a138d, type: 3}
-  NPCcounterText: {fileID: 1777438988}
 --- !u!1 &294519480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,7 +4408,6 @@ RectTransform:
   - {fileID: 1223169265}
   - {fileID: 263927656}
   - {fileID: 1148453260}
-  - {fileID: 1777438987}
   m_Father: {fileID: 2030093870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -7479,6 +7478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748436bbf9837654f950e7b75cc467de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 0
 --- !u!50 &434487570
 Rigidbody2D:
   serializedVersion: 4
@@ -7816,6 +7816,7 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: a4d69036de803ea48aca016ce8d18842, type: 2}
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
+  movementDisabler: {fileID: 0}
 --- !u!212 &457848572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7988,6 +7989,7 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
   plantPrefab: {fileID: 3294428688369617531, guid: e70e0bd5cd87d83448a9c588966801a4, type: 3}
   replacementNPC: {fileID: 0}
+  movementDisabler: {fileID: 571135305}
 --- !u!212 &483282348
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9867,7 +9869,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3322177, y: -5.5539074, z: -9}
+  m_LocalPosition: {x: -2.2820983, y: -5.554002, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10156,6 +10158,51 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &571135303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 571135304}
+  - component: {fileID: 571135305}
+  m_Layer: 0
+  m_Name: MovementDisabler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &571135304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571135303}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1072668509}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &571135305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571135303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8302845372d9e0a42b14c6e453287430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 434487569}
 --- !u!1 &636045635
 GameObject:
   m_ObjectHideFlags: 0
@@ -14308,6 +14355,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 281090416}
+  - {fileID: 571135304}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074127586
@@ -22459,140 +22507,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1777438986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1777438987}
-  - component: {fileID: 1777438989}
-  - component: {fileID: 1777438988}
-  m_Layer: 5
-  m_Name: NPC counter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1777438987
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777438986}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 320814938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -762.7, y: -118.86124}
-  m_SizeDelta: {x: 300, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1777438988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777438986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Kordi r\xE4\xE4gitud tegelasega: "
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1777438989
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777438986}
-  m_CullTransparentMesh: 1
 --- !u!1 &1782275162
 GameObject:
   m_ObjectHideFlags: 0
@@ -22808,6 +22722,7 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 4f89cb5530b02064d9c2beb28e6b7299, type: 2}
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
+  movementDisabler: {fileID: 0}
 --- !u!212 &1803123062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24136,6 +24051,7 @@ GameObject:
   - component: {fileID: 1908471969}
   - component: {fileID: 1908471968}
   - component: {fileID: 1908471967}
+  - component: {fileID: 1908471971}
   m_Layer: 0
   m_Name: NPC (takes plants)
   m_TagString: Plant taker
@@ -24155,6 +24071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb78826042f06884b8c6db8d93a1e9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: {fileID: 1908471971}
 --- !u!70 &1908471968
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -24257,6 +24174,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 547648574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908471971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908471966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: 26cbda4624e9d3444a3e60536a6a29a5, type: 2}
+  plantPrefab: {fileID: 0}
+  replacementNPC: {fileID: 0}
+  movementDisabler: {fileID: 571135305}
 --- !u!1 &1910119791
 GameObject:
   m_ObjectHideFlags: 0
@@ -25378,6 +25311,7 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: f16c5aa1a185b7b40a66d19f4f9bad2d, type: 2}
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 1908471966}
+  movementDisabler: {fileID: 571135305}
 --- !u!1 &2086587457
 GameObject:
   m_ObjectHideFlags: 0
@@ -25462,6 +25396,7 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 72b126d70457fd64e8e8254834128be1, type: 2}
   plantPrefab: {fileID: 4372961259089571334, guid: bbeed156e6ad837449906a695d4c30b8, type: 3}
   replacementNPC: {fileID: 0}
+  movementDisabler: {fileID: 571135305}
 --- !u!212 &2086587461
 SpriteRenderer:
   m_ObjectHideFlags: 0

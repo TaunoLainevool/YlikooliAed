@@ -11,7 +11,7 @@ public class NPC : MonoBehaviour, IInteractible
     public NPCdialogue dialogueData;
     private DialogueController dialogueUI;
 
-    private int dialogueIndex;
+    int dialogueIndex; //may break something, if does - remove public
     private bool isTyping, isDialogueActive;
     
     private bool hasGivenPlant = false;
@@ -20,13 +20,15 @@ public class NPC : MonoBehaviour, IInteractible
 
     public GameObject replacementNPC;
 
-    
+    public MovementDisabler movementDisabler;
+
 
 
     private void Start()
     {
         hasGivenPlant = false;
         dialogueUI = DialogueController.Instance;
+        
 
     }
     public void Interact(){
@@ -47,12 +49,13 @@ public class NPC : MonoBehaviour, IInteractible
     {
         return !isDialogueActive;
     }
-    void StartDialogue(){
-        
+    void StartDialogue(){ //may break something, if does - remove public
         isDialogueActive = true;
+        Debug.Log(isDialogueActive);
         dialogueIndex =0;
         dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);
         dialogueUI.ShowDialogueUI(true);
+        movementDisabler.disableMovement();
         DisplayCurrentLine();
 
     }
@@ -117,15 +120,22 @@ void DisplayCurrentLine(){
     StartCoroutine(TypeLine());
 }
 
-    public void EndDialogue(){
-        StopAllCoroutines();
+    void EndDialogue()
+    {
+        
+        Debug.Log(isDialogueActive);
         isDialogueActive = false;
+        Debug.Log(isDialogueActive);
         dialogueUI.SetDialogueText("");
         dialogueUI.ShowDialogueUI(false);
+        dialogueUI.ClearChoices();
         givePlant();
         // Debug.Log("Passed given plant");
         replaceNPC();
         // Debug.Log("Passed replacement");
+        movementDisabler.enableMovement();
+        StopAllCoroutines();
+        return;
     }
 
     void replaceNPC(){
@@ -147,7 +157,7 @@ void DisplayCurrentLine(){
     }
 
     void givePlant(){
-        Debug.Log(dialogueData.dialogueLines.Length);
+        //Debug.Log(dialogueData.dialogueLines.Length);
         if(dialogueIndex == dialogueData.dialogueLines.Length && dialogueData.plantGiver == true && hasGivenPlant !=true){
             if(plantPrefab){
                 GameObject player;

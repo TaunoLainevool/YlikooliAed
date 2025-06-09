@@ -10,6 +10,7 @@ public class plantTaker : MonoBehaviour, IInteractible
     GameObject lavenderPlant;
     GameObject parsleyPlant;
     GameObject tulipPlant;
+    public NPC npc;
     public bool CanInteract()
     {
         return takesPlants;
@@ -27,12 +28,14 @@ public class plantTaker : MonoBehaviour, IInteractible
             Debug.Log("There is a plant");
             switch(obtainedPlant.name){
                 case "Lavender(Clone)":
-                
+                   // npc.StartDialogue();
                     Debug.Log("it is a lavender");
                     lavenderPlant.transform.GetChild(0).gameObject.SetActive(true);
                     break;
                 case "Petersell(Clone)":
                     Debug.Log("There is a parsley");
+                  //  npc.StartDialogue();
+                    // npc.dialogueIndex = 1;
                     parsleyPlant.transform.GetChild(0).gameObject.SetActive(true);
                     break;
                 case "Tulip(Clone)":
