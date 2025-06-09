@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class NPC : MonoBehaviour, IInteractible
@@ -19,36 +18,27 @@ public class NPC : MonoBehaviour, IInteractible
     public GameObject plantPrefab;
 
     public GameObject replacementNPC;
-
-    
-
-
     private void Start()
     {
         hasGivenPlant = false;
         dialogueUI = DialogueController.Instance;
-
+        
     }
     public void Interact(){
         if(dialogueData == null){
             return;
         }
-        if (isDialogueActive)
-        {
+        if(isDialogueActive){
             NextLine();
         }
-        else
-        {
+        else{
             StartDialogue();
         }
     }
-    
-    public bool CanInteract()
-    {
+    public bool CanInteract(){
         return !isDialogueActive;
     }
     void StartDialogue(){
-        
         isDialogueActive = true;
         dialogueIndex =0;
         dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);

@@ -27,7 +27,6 @@ public class plantTaker : MonoBehaviour, IInteractible
             Debug.Log("There is a plant");
             switch(obtainedPlant.name){
                 case "Lavender(Clone)":
-                
                     Debug.Log("it is a lavender");
                     lavenderPlant.transform.GetChild(0).gameObject.SetActive(true);
                     break;
