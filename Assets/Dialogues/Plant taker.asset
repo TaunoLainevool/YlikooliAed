@@ -15,6 +15,7 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
+  - Gde taim???
   - "Ait\xFCma lavendli eest!"
   - "Ait\xFCma peterselli eest!"
   - "Ait\xFCma tulbi eest!"

@@ -22,6 +22,7 @@ public class plantTaker : MonoBehaviour, IInteractible
 
         if(obtainedPlant==null){
             Debug.Log("There is no plant");
+            npc.StartDialogue(0);
             return;
         }
         else{
@@ -30,21 +31,24 @@ public class plantTaker : MonoBehaviour, IInteractible
                 case "Lavender(Clone)":
                    // npc.StartDialogue();
                     Debug.Log("it is a lavender");
+                    npc.StartDialogue(1);
+                    // npc.dialogueIndex = 1;
                     lavenderPlant.transform.GetChild(0).gameObject.SetActive(true);
                     break;
                 case "Petersell(Clone)":
                     Debug.Log("There is a parsley");
-                  //  npc.StartDialogue();
-                    // npc.dialogueIndex = 1;
+                    npc.StartDialogue(2);
                     parsleyPlant.transform.GetChild(0).gameObject.SetActive(true);
                     break;
                 case "Tulip(Clone)":
                     Debug.Log("There is a tulip");
+                    npc.StartDialogue(3);
                     tulipPlant.transform.GetChild(0).gameObject.SetActive(true);
                     break;
 
                 default:
                     Debug.Log("default");
+                    
                     break;
             }
             Destroy(obtainedPlant);

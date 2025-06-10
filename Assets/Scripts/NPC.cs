@@ -11,7 +11,7 @@ public class NPC : MonoBehaviour, IInteractible
     public NPCdialogue dialogueData;
     private DialogueController dialogueUI;
 
-    int dialogueIndex; //may break something, if does - remove public
+    public int dialogueIndex; //may break something, if does - remove public
     private bool isTyping, isDialogueActive;
     
     private bool hasGivenPlant = false;
@@ -41,7 +41,7 @@ public class NPC : MonoBehaviour, IInteractible
         }
         else
         {
-            StartDialogue();
+            StartDialogue(0);
         }
     }
     
@@ -49,10 +49,10 @@ public class NPC : MonoBehaviour, IInteractible
     {
         return !isDialogueActive;
     }
-    void StartDialogue(){ //may break something, if does - remove public
+    public void StartDialogue(int index){ //may break something, if does - remove public
         isDialogueActive = true;
         Debug.Log(isDialogueActive);
-        dialogueIndex =0;
+        dialogueIndex =index;
         dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);
         dialogueUI.ShowDialogueUI(true);
         movementDisabler.disableMovement();
@@ -120,9 +120,9 @@ void DisplayCurrentLine(){
     StartCoroutine(TypeLine());
 }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
-        
+        StopAllCoroutines();
         Debug.Log(isDialogueActive);
         isDialogueActive = false;
         Debug.Log(isDialogueActive);
@@ -134,8 +134,7 @@ void DisplayCurrentLine(){
         replaceNPC();
         // Debug.Log("Passed replacement");
         movementDisabler.enableMovement();
-        StopAllCoroutines();
-        return;
+
     }
 
     void replaceNPC(){

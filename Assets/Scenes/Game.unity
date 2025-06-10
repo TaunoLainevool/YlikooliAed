@@ -1336,7 +1336,7 @@ GameObject:
   - component: {fileID: 119074559}
   - component: {fileID: 119074558}
   m_Layer: 0
-  m_Name: NPC2
+  m_Name: Greek NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,6 +1405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 79d22c8417a764e4bbce8841ad8bc1e2, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
   replacementNPC: {fileID: 0}
   movementDisabler: {fileID: 571135305}
@@ -4044,6 +4045,42 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2074125723}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: EndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 483282347}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: EndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 119074559}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: EndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2086587460}
         m_TargetAssemblyTypeName: NPC, Assembly-CSharp
         m_MethodName: EndDialogue
         m_Mode: 1
@@ -7814,6 +7851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: a4d69036de803ea48aca016ce8d18842, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
   movementDisabler: {fileID: 0}
@@ -7968,7 +8006,7 @@ GameObject:
   - component: {fileID: 483282347}
   - component: {fileID: 483282350}
   m_Layer: 0
-  m_Name: NPC2
+  m_Name: French NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7987,6 +8025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 3294428688369617531, guid: e70e0bd5cd87d83448a9c588966801a4, type: 3}
   replacementNPC: {fileID: 0}
   movementDisabler: {fileID: 571135305}
@@ -9869,7 +9908,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2820983, y: -5.554002, z: -9}
+  m_LocalPosition: {x: -2.3322177, y: -5.5539074, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22720,6 +22759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 4f89cb5530b02064d9c2beb28e6b7299, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
   movementDisabler: {fileID: 0}
@@ -24187,6 +24227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 26cbda4624e9d3444a3e60536a6a29a5, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
   movementDisabler: {fileID: 571135305}
@@ -25188,7 +25229,7 @@ GameObject:
   - component: {fileID: 2074125722}
   - component: {fileID: 2074125723}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: Garden NPC
   m_TagString: Roheklubi juht
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25309,6 +25350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: f16c5aa1a185b7b40a66d19f4f9bad2d, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 1908471966}
   movementDisabler: {fileID: 571135305}
@@ -25394,6 +25436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 72b126d70457fd64e8e8254834128be1, type: 2}
+  dialogueIndex: 0
   plantPrefab: {fileID: 4372961259089571334, guid: bbeed156e6ad837449906a695d4c30b8, type: 3}
   replacementNPC: {fileID: 0}
   movementDisabler: {fileID: 571135305}

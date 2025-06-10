@@ -22,12 +22,17 @@ public class NPCdialogue : ScriptableObject
     
 
 
+    public bool hasPointableQuestions;
+    
     public DialogueChoice[] choices;
 }
 
 [System.Serializable]
-public class DialogueChoice{
+public class DialogueChoice
+{
     public int dialogueIndex;//Dialogue line where choices appear
     public string[] choices;//Player response options
     public int[] nextDialogueIndexes;//Where choice leads
+    public bool[] correctAnswers;//What answers give points
+  
 }
