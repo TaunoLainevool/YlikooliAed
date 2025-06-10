@@ -22,13 +22,17 @@ public class NPC : MonoBehaviour, IInteractible
 
     public MovementDisabler movementDisabler;
 
+    PointController pointController;
+
+
 
 
     private void Start()
     {
         hasGivenPlant = false;
         dialogueUI = DialogueController.Instance;
-        
+        GameObject pointControllerObj = GameObject.FindGameObjectWithTag("PointController");
+        pointController = pointControllerObj.GetComponent<PointController>();
 
     }
     public void Interact(){
@@ -51,7 +55,7 @@ public class NPC : MonoBehaviour, IInteractible
     }
     public void StartDialogue(int index){ //may break something, if does - remove public
         isDialogueActive = true;
-        Debug.Log(isDialogueActive);
+        // Debug.Log(isDialogueActive);
         dialogueIndex =index;
         dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);
         dialogueUI.ShowDialogueUI(true);
@@ -103,9 +107,33 @@ public class NPC : MonoBehaviour, IInteractible
     }
 
 void DisplayChoices(DialogueChoice choice){
-    for(int i = 0; i<choice.choices.Length; i++){
-        int nextIndex = choice.nextDialogueIndexes[i];
-        dialogueUI.CreateChoiceButton(choice.choices[i], () => ChooseOption(nextIndex));
+        for (int i = 0; i < choice.choices.Length; i++) {
+            int nextIndex = choice.nextDialogueIndexes[i];
+            // Debug.Log(i);
+            // Debug.Log(choice.correctAnswers[i]);
+            int choiceIndex = i;
+            dialogueUI.CreateChoiceButton(choice.choices[i], () =>
+            {
+                if (choice.isPointable)
+                {
+                    if (choice.correctAnswers[choiceIndex] == true)
+                    {
+                        // Debug.Log("correct answer");
+                        pointController.addPoints(choice.choices.Length);
+                        // Debug.Log(pointController.getPoints());
+                    }
+                    else
+                    {
+                        pointController.removePoints(1);
+                        // Debug.Log("incorrect");
+                    }
+                }
+
+                
+                ChooseOption(nextIndex);
+            }
+                );
+        
     }
 }
 
@@ -123,9 +151,9 @@ void DisplayCurrentLine(){
     public void EndDialogue()
     {
         StopAllCoroutines();
-        Debug.Log(isDialogueActive);
+        // Debug.Log(isDialogueActive);
         isDialogueActive = false;
-        Debug.Log(isDialogueActive);
+        // Debug.Log(isDialogueActive);
         dialogueUI.SetDialogueText("");
         dialogueUI.ShowDialogueUI(false);
         dialogueUI.ClearChoices();
