@@ -1,5 +1,3 @@
-# YlikooliAed
+09.06.25
 
-Tallinna ülikooli suvepraktika 2025 
-
-Tegemist on Unity ja C# kirjutatud pikselgraafiku mänguga.
+Installisin esialgu Unity ning lahendasin mõned vead, mis tekkisid installimisel. Seejärel jagasime meeskonnas ülesanded, ja mina vastutan blogimise eest. Lõin meie meeskonnale kausta Google Drive’is. Mängus vastutan klassiruumide ja teiste asukohtade kujundamise eest. Lisasin kolm uut klassi koos nende NPC-dega ning paigutasin ka dekoratiivseid elemente. Tekkisid väiksed mured(nt. teleport ei töötanud/kaamera ei jälginud tegelase liikumist), kuid need said kiiresti lahendatud.
