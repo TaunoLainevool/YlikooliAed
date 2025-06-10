@@ -11,6 +11,7 @@ TagManager:
   - Parsley
   - Tulip
   - NPC counter
+  - PointController
   layers:
   - Default
   - TransparentFX

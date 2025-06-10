@@ -11,7 +11,7 @@ public class NPC : MonoBehaviour, IInteractible
     public NPCdialogue dialogueData;
     private DialogueController dialogueUI;
 
-    private int dialogueIndex;
+    public int dialogueIndex; //may break something, if does - remove public
     private bool isTyping, isDialogueActive;
     
     private bool hasGivenPlant = false;
@@ -20,13 +20,19 @@ public class NPC : MonoBehaviour, IInteractible
 
     public GameObject replacementNPC;
 
-    
+    public MovementDisabler movementDisabler;
+
+    PointController pointController;
+
+
 
 
     private void Start()
     {
         hasGivenPlant = false;
         dialogueUI = DialogueController.Instance;
+        GameObject pointControllerObj = GameObject.FindGameObjectWithTag("PointController");
+        pointController = pointControllerObj.GetComponent<PointController>();
 
     }
     public void Interact(){
@@ -39,7 +45,7 @@ public class NPC : MonoBehaviour, IInteractible
         }
         else
         {
-            StartDialogue();
+            StartDialogue(0);
         }
     }
     
@@ -47,12 +53,13 @@ public class NPC : MonoBehaviour, IInteractible
     {
         return !isDialogueActive;
     }
-    void StartDialogue(){
-        
+    public void StartDialogue(int index){ //may break something, if does - remove public
         isDialogueActive = true;
-        dialogueIndex =0;
+        // Debug.Log(isDialogueActive);
+        dialogueIndex =index;
         dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);
         dialogueUI.ShowDialogueUI(true);
+        movementDisabler.disableMovement();
         DisplayCurrentLine();
 
     }
@@ -100,9 +107,33 @@ public class NPC : MonoBehaviour, IInteractible
     }
 
 void DisplayChoices(DialogueChoice choice){
-    for(int i = 0; i<choice.choices.Length; i++){
-        int nextIndex = choice.nextDialogueIndexes[i];
-        dialogueUI.CreateChoiceButton(choice.choices[i], () => ChooseOption(nextIndex));
+        for (int i = 0; i < choice.choices.Length; i++) {
+            int nextIndex = choice.nextDialogueIndexes[i];
+            // Debug.Log(i);
+            // Debug.Log(choice.correctAnswers[i]);
+            int choiceIndex = i;
+            dialogueUI.CreateChoiceButton(choice.choices[i], () =>
+            {
+                if (choice.isPointable)
+                {
+                    if (choice.correctAnswers[choiceIndex] == true)
+                    {
+                        // Debug.Log("correct answer");
+                        pointController.addPoints(choice.choices.Length);
+                        // Debug.Log(pointController.getPoints());
+                    }
+                    else
+                    {
+                        pointController.removePoints(1);
+                        // Debug.Log("incorrect");
+                    }
+                }
+
+                
+                ChooseOption(nextIndex);
+            }
+                );
+        
     }
 }
 
@@ -117,15 +148,21 @@ void DisplayCurrentLine(){
     StartCoroutine(TypeLine());
 }
 
-    public void EndDialogue(){
+    public void EndDialogue()
+    {
         StopAllCoroutines();
+        // Debug.Log(isDialogueActive);
         isDialogueActive = false;
+        // Debug.Log(isDialogueActive);
         dialogueUI.SetDialogueText("");
         dialogueUI.ShowDialogueUI(false);
+        dialogueUI.ClearChoices();
         givePlant();
         // Debug.Log("Passed given plant");
         replaceNPC();
         // Debug.Log("Passed replacement");
+        movementDisabler.enableMovement();
+
     }
 
     void replaceNPC(){
@@ -147,7 +184,7 @@ void DisplayCurrentLine(){
     }
 
     void givePlant(){
-        Debug.Log(dialogueData.dialogueLines.Length);
+        //Debug.Log(dialogueData.dialogueLines.Length);
         if(dialogueIndex == dialogueData.dialogueLines.Length && dialogueData.plantGiver == true && hasGivenPlant !=true){
             if(plantPrefab){
                 GameObject player;

@@ -14,6 +14,7 @@ public class DialogueController : MonoBehaviour
     public Image portraitImage;
     public Transform choiceContainer;
     public GameObject choiceButtonPrefab;
+
     
 
     // Start is called before the first frame update
@@ -28,7 +29,8 @@ public class DialogueController : MonoBehaviour
     }
 
     // Update is called once per frame
-   public void ShowDialogueUI(bool show){
+    public void ShowDialogueUI(bool show)
+    {
         dialoguePanel.SetActive(show);
    }
 
