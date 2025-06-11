@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
@@ -13,6 +14,9 @@ public class DialogueController : MonoBehaviour
     public Image portraitImage;
     public Transform choiceContainer;
     public GameObject choiceButtonPrefab;
+
+    
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -25,7 +29,8 @@ public class DialogueController : MonoBehaviour
     }
 
     // Update is called once per frame
-   public void ShowDialogueUI(bool show){
+    public void ShowDialogueUI(bool show)
+    {
         dialoguePanel.SetActive(show);
    }
 

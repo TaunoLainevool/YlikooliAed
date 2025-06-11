@@ -9,6 +9,9 @@ TagManager:
   - Plant taker
   - Lavender
   - Parsley
+  - Tulip
+  - NPC counter
+  - PointController
   layers:
   - Default
   - TransparentFX
