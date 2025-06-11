@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: 
   npcPortrait: {fileID: 0}
-  dialogueLines: []
+  dialogueLines:
+  - Mis tahad?
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1

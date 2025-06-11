@@ -19,11 +19,12 @@ MonoBehaviour:
   - "Ait\xFCma lavendli eest!"
   - "Ait\xFCma peterselli eest!"
   - "Ait\xFCma tulbi eest!"
+  - "Tubli t\xF6\xF6, said"
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  autoProgressLines: 010101
-  endDialogueLines: 010101
+  autoProgressLines: 01010100
+  endDialogueLines: 01010101
   autoProgressDelay: 1
   plantGiver: 0
   choices: []

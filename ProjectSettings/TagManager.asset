@@ -11,6 +11,9 @@ TagManager:
   - Parsley
   - Tulip
   - NPC counter
+  - PointController
+  - NPC movement pointer
+  - Movement disabler
   layers:
   - Default
   - TransparentFX

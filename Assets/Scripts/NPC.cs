@@ -25,6 +25,7 @@ public class NPC : MonoBehaviour, IInteractible
 
     PointController pointController;
 
+    private string optionalText;
 
 
 
@@ -180,17 +181,21 @@ void DisplayCurrentLine(){
     void replaceNPC(){
         // Debug.Log(dialogueIndex +" "+ dialogueData.dialogueLines.Length);
         if(dialogueIndex+1 == dialogueData.dialogueLines.Length){
-            if (replacementNPC == null){
+            if (replacementNPC == null)
+            {
                 // Debug.Log("There is a nully wully");
                 return;
-            } 
-            else{
+            }
+            else
+            {
                 // Debug.Log("No nully wully");
                 GameObject oldNPC = GameObject.FindGameObjectWithTag("Roheklubi juht");
                 // Debug.Log("oldnpc "+oldNPC);
                 // Debug.Log("replaced");
                 replacementNPC.SetActive(true);
+                // Debug.Log("new here");
                 oldNPC.SetActive(false);
+                // Debug.Log("old gone");
             }
         }
     }

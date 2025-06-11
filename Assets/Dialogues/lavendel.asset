@@ -32,7 +32,6 @@ MonoBehaviour:
   endDialogueLines: 
   autoProgressDelay: 1.5
   plantGiver: 1
-  hasPointableQuestions: 0
   choices:
   - dialogueIndex: 0
     choices:
@@ -40,7 +39,8 @@ MonoBehaviour:
     - Lavendlit kasutati ainult kuninglike paleede kaunistamiseks.
     - "Lavendel oli keelatud taim, sest arvati, et see toob halba \xF5nne."
     nextDialogueIndexes: 010000000400000004000000
-    correctAnswers: 
+    isPointable: 1
+    correctAnswers: 010000
   - dialogueIndex: 1
     choices:
     - "Lavendel vajab palju p\xE4ikest, h\xE4sti kuivendatud lubjarikast mulda ja
@@ -48,7 +48,8 @@ MonoBehaviour:
     - "Lavendel vajab niisket ja varjulist kasvukohta, et h\xE4sti kasvada."
     - "Lavendel kasvab k\xF5ige paremini troopilises d\u017Eunglis koos vihmametsataimedega."
     nextDialogueIndexes: 020000000400000004000000
-    correctAnswers: 
+    isPointable: 1
+    correctAnswers: 010000
   - dialogueIndex: 2
     choices:
     - "Lavendlit kasutatakse teena rahustava toime t\xF5ttu, eeterliku \xF5lina nahahoolduses
@@ -57,7 +58,8 @@ MonoBehaviour:
       v\xE4rvi."
     - "Lavendel on tuntud oma v\xF5ime poolest parandada telepaatilisi v\xF5imeid."
     nextDialogueIndexes: 030000000400000004000000
-    correctAnswers: 
+    isPointable: 1
+    correctAnswers: 010000
   - dialogueIndex: 3
     choices:
     - "Lavendlist valmistatakse eeterlikke \xF5lisid, seepi, kosmeetikatooteid ja
@@ -67,9 +69,11 @@ MonoBehaviour:
     - "Lavendel on peamiselt kasutusel ainult tekstiilit\xF6\xF6stuses, kus sellest
       tehakse kangast."
     nextDialogueIndexes: 050000000400000004000000
-    correctAnswers: 
+    isPointable: 1
+    correctAnswers: 010000
   - dialogueIndex: 4
     choices:
     - Uuesti
     nextDialogueIndexes: 00000000
+    isPointable: 0
     correctAnswers: 
