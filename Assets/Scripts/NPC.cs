@@ -20,7 +20,8 @@ public class NPC : MonoBehaviour, IInteractible
 
     public GameObject replacementNPC;
 
-    public MovementDisabler movementDisabler;
+    public NPCmovement npcMovement;
+    MovementDisabler movementDisabler;
 
     PointController pointController;
 
@@ -34,6 +35,9 @@ public class NPC : MonoBehaviour, IInteractible
         GameObject pointControllerObj = GameObject.FindGameObjectWithTag("PointController");
         pointController = pointControllerObj.GetComponent<PointController>();
 
+        GameObject movementDisablerObj = GameObject.FindGameObjectWithTag("Movement disabler");
+        movementDisabler = movementDisablerObj.GetComponent<MovementDisabler>();
+
     }
     public void Interact(){
         if(dialogueData == null){
@@ -45,6 +49,10 @@ public class NPC : MonoBehaviour, IInteractible
         }
         else
         {
+            if (npcMovement != null)
+            {
+                npcMovement.isWaiting = true;
+            }
             StartDialogue(0);
         }
     }
@@ -162,6 +170,10 @@ void DisplayCurrentLine(){
         replaceNPC();
         // Debug.Log("Passed replacement");
         movementDisabler.enableMovement();
+        if (npcMovement != null)
+        {
+            npcMovement.isWaiting = false;
+        }
 
     }
 
