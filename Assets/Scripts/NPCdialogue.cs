@@ -20,14 +20,16 @@ public class NPCdialogue : ScriptableObject
     public bool plantGiver = true; //NPC gives plants
 
     
-
-
     public DialogueChoice[] choices;
 }
 
 [System.Serializable]
-public class DialogueChoice{
+public class DialogueChoice
+{
     public int dialogueIndex;//Dialogue line where choices appear
     public string[] choices;//Player response options
     public int[] nextDialogueIndexes;//Where choice leads
+    public bool isPointable;
+    public bool[] correctAnswers;//What answers give points
+  
 }
