@@ -20,10 +20,14 @@ public class NPC : MonoBehaviour, IInteractible
 
     public GameObject replacementNPC;
 
-    public MovementDisabler movementDisabler;
+    public GameObject replaceableNPC;
+
+    public NPCmovement npcMovement;
+    MovementDisabler movementDisabler;
 
     PointController pointController;
 
+    private string optionalText;
 
 
 
@@ -33,6 +37,9 @@ public class NPC : MonoBehaviour, IInteractible
         dialogueUI = DialogueController.Instance;
         GameObject pointControllerObj = GameObject.FindGameObjectWithTag("PointController");
         pointController = pointControllerObj.GetComponent<PointController>();
+
+        GameObject movementDisablerObj = GameObject.FindGameObjectWithTag("Movement disabler");
+        movementDisabler = movementDisablerObj.GetComponent<MovementDisabler>();
 
     }
     public void Interact(){
@@ -45,6 +52,10 @@ public class NPC : MonoBehaviour, IInteractible
         }
         else
         {
+            if (npcMovement != null)
+            {
+                npcMovement.isWaiting = true;
+            }
             StartDialogue(0);
         }
     }
@@ -162,23 +173,31 @@ void DisplayCurrentLine(){
         replaceNPC();
         // Debug.Log("Passed replacement");
         movementDisabler.enableMovement();
+        if (npcMovement != null)
+        {
+            npcMovement.isWaiting = false;
+        }
 
     }
 
     void replaceNPC(){
         // Debug.Log(dialogueIndex +" "+ dialogueData.dialogueLines.Length);
-        if(dialogueIndex+1 == dialogueData.dialogueLines.Length){
-            if (replacementNPC == null){
+        if(dialogueIndex == dialogueData.dialogueLines.Length){
+            if (replacementNPC == null && replaceableNPC == null)
+            {
                 // Debug.Log("There is a nully wully");
                 return;
-            } 
-            else{
+            }
+            else
+            {
                 // Debug.Log("No nully wully");
-                GameObject oldNPC = GameObject.FindGameObjectWithTag("Roheklubi juht");
+                GameObject oldNPC = replaceableNPC;
                 // Debug.Log("oldnpc "+oldNPC);
                 // Debug.Log("replaced");
                 replacementNPC.SetActive(true);
+                // Debug.Log("new here");
                 oldNPC.SetActive(false);
+                // Debug.Log("old gone");
             }
         }
     }
