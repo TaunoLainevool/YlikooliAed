@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: RoheliseVarjuValvur
+  m_EditorClassIdentifier: 
+  npcName: Rohelise Varju Valvur
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "N\xE4en, et oled kuulanud metsa sosinaid. Aga \xFCtle mulle\u2026 kas sa suudad
+    m\xF5istatuse lahendada?"
+  - "Ma ei \xF5itse kunagi, kuid jaanip\xE4eva \xF6\xF6l mind otsitakse. Mul pole
+    seemneid, kuid mu lapsed reisivad tuulega. Mis ma olen?"
+  - "\xD5ige vastus! Kui taime endaga kaasa v\xF5tta soovid, \xFChtaegu oma teadmisi
+    proovid."
+  - "Kuidas s\xF5najalad paljunevad?"
+  - "Sul on \xF5igus! Milline s\xFCndmus on seotud s\xF5najalgadega?"
+  - "T\xE4pselt nii! Mis teeb s\xF5najala meditsiiniliselt oluliseks?"
+  - "See teadmine libises sul k\xE4est, kuid mets ei m\xF5ista karmilt. Kuula loodust
+    hoolikamalt ja proovi uuesti."
+  - "Iidne tarkus on kannatlik \u2013 \xE4ra karda eksida. \xD5ige tee ootab sind."
+  - "S\xF5najalg ei ava end esimesele m\xF6\xF6dujale. M\xF5tle s\xFCgavamalt ja
+    otsi t\xF5de uuesti."
+  - "Mets sosistab, aga sina veel ei kuule. J\xE4\xE4 rahulikuks ja kuula uuesti."
+  - "Tubli oled. Siin on sinu s\xF5najalg!"
+  typingSpeed: 0.04
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - "Hobusej\xF5hv"
+    - "P\xE4risraigas"
+    - "S\xF5najalg"
+    nextDialogueIndexes: 060000000600000002000000
+    isPointable: 1
+    correctAnswers: 000001
+  - dialogueIndex: 2
+    choices:
+    - Seemnetega
+    - Eostega
+    - Juurtega
+    nextDialogueIndexes: 06000000030000000600000001000000
+    isPointable: 1
+    correctAnswers: 000100
+  - dialogueIndex: 4
+    choices:
+    - "J\xF5ulu\xF5htu"
+    - "Jaani\xF6\xF6"
+    - "T\xE4iskuu \xF6\xF6"
+    nextDialogueIndexes: 080000000500000008000000
+    isPointable: 1
+    correctAnswers: 000100
+  - dialogueIndex: 5
+    choices:
+    - Parandab haavu
+    - See aitab ravida paelusse
+    - See toob head und
+    nextDialogueIndexes: 090000000a00000009000000
+    isPointable: 1
+    correctAnswers: 000100
+  - dialogueIndex: 6
+    choices:
+    - Proovi uuesti!
+    nextDialogueIndexes: 01000000
+    isPointable: 1
+    correctAnswers: 000100
+  - dialogueIndex: 7
+    choices:
+    - Proovi uuesti!
+    nextDialogueIndexes: 03000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 8
+    choices:
+    - Proovi uuesti!
+    nextDialogueIndexes: 04000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 9
+    choices:
+    - Proovi uuesti!
+    nextDialogueIndexes: 05000000
+    isPointable: 0
+    correctAnswers: 
