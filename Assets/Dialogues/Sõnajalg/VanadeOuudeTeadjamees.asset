@@ -15,12 +15,15 @@ MonoBehaviour:
   npcName: Vanade Ouude Teadjamees
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Vaata sinna, kus elu on ammu juurdunud, ja leia iidne taim, mis ei vaja p\xE4ikest."
-  typingSpeed: 0.05
+  - "Huvitav, eks\u2026 k\xF5ik otsivad p\xE4ikese poole. Aga s\xF5najalg mitte."
+  - "See taim kasvab rahulikult metsavarjus, isegi seal, kus valgus ei j\xF5ua \xFCldse."
+  - "Ja kas sa teadsid, et vanasti kasutati s\xF5najala juuri paelusside vastu? See
+    polnud ainult kaunistus, vaid ka ravim."
+  typingSpeed: 0.04
   voiceSound: {fileID: 0}
   voicePitch: 1
   autoProgressLines: 
   endDialogueLines: 
   autoProgressDelay: 1.5
-  plantGiver: 1
+  plantGiver: 0
   choices: []

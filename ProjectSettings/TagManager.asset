@@ -12,6 +12,7 @@ TagManager:
   - Tulip
   - NPC counter
   - PointController
+  - Sonajalg
   layers:
   - Default
   - TransparentFX

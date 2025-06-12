@@ -15,13 +15,15 @@ MonoBehaviour:
   npcName: Konn
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Hihii ma \xFCtleks, et meie \xFCmber on palju s\xF5najalgu, \xE4kki see on \xF5ige
-    vastus ? :))"
-  typingSpeed: 0.05
+  - "Hihii, kas sa juba aimad? Nad on k\xF5ikjal siin! S\xF5najalad on nagu\u2026
+    vanad metsalood."
+  - "Tegelt \u2013 nad on t\xF5esti vanemad kui dinosaurused! Ja kujutad ette \u2013
+    neil polegi \xF5isi!"
+  typingSpeed: 0.04
   voiceSound: {fileID: 0}
   voicePitch: 1
   autoProgressLines: 
   endDialogueLines: 
   autoProgressDelay: 1.5
-  plantGiver: 1
+  plantGiver: 0
   choices: []

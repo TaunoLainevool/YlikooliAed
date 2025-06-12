@@ -24,6 +24,9 @@ MonoBehaviour:
   - "Ma tean, et sa otsid Neitsi Maarjat. Ta asub kabelis ja ootab uusi r\xE4ndureid.
     Paljud ei ole temalt saanud seda, mida nad soovisid. Aga kuna sa arvasid \xE4ra
     m\xF5istatuse vastuse, siis tea, et sinna p\xE4\xE4seb l\xE4bi aia."
+  - "Ja pea meeles \u2013 r\xE4\xE4gitakse, et kunagi olid tema \xF5ied valged. Aga
+    kui Maarja tema kohale kummardus, said need siniseks. Sellest ajast on tema l\xF5hn
+    nagu taeva m\xE4lestus."
   typingSpeed: 0.045
   voiceSound: {fileID: 0}
   voicePitch: 1

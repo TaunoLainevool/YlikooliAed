@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
-  m_Name: MetsadeKaitseinge
+  m_Name: VanaAiaVaim
   m_EditorClassIdentifier: 
-  npcName: Metsade Kaitseinge
+  npcName: Vana Aia Vaim
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Sa otsid taime, mis ei \xF5itse, eks? Aga tead, \xFCks p\xF5nev asi\u2026"
-  - "S\xF5najalad ei kanna lilli ega seemneid \u2013 nende elu algab hoopis v\xE4ikestest
-    eostest, mis lendavad tuulega."
-  - "Nii vanad nad on, et nende looduslik ilu ei vaja \xF5isi. Neid lihtsalt\u2026
-    pole."
-  typingSpeed: 0.04
+  - "See aed on teadmiste aed. Kui puudutad kuju, kuuled Kreeka legendi piparm\xFCndist."
+  - "Aga enne seda, lase ma annan sulle vihje: See taim, kellest sa kohe kuuled,
+    \xF5itseb siis, kui suvep\xE4ike ei p\xF5leta enam \u2014 vaid paitab pehmelt.
+    Ja kui ta kord kasvama hakkab, ei j\xE4\xE4 ta paigale \u2013 ta liigub edasi
+    nii maa all kui ka \xF5hus\u2026"
+  typingSpeed: 0.045
   voiceSound: {fileID: 0}
   voicePitch: 1
   autoProgressLines: 

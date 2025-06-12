@@ -15,6 +15,8 @@ MonoBehaviour:
   npcName: Rohelise Varju Valvur
   npcPortrait: {fileID: 0}
   dialogueLines:
+  - "N\xE4en, et oled kuulanud metsa sosinaid. Aga \xFCtle mulle\u2026 kas sa suudad
+    m\xF5istatuse lahendada?"
   - "Ma ei \xF5itse kunagi, kuid jaanip\xE4eva \xF6\xF6l mind otsitakse. Mul pole
     seemneid, kuid mu lapsed reisivad tuulega. Mis ma olen?"
   - "\xD5ige vastus! Kui taime endaga kaasa v\xF5tta soovid, \xFChtaegu oma teadmisi
@@ -29,7 +31,7 @@ MonoBehaviour:
     otsi t\xF5de uuesti."
   - "Mets sosistab, aga sina veel ei kuule. J\xE4\xE4 rahulikuks ja kuula uuesti."
   - "Tubli oled. Siin on sinu s\xF5najalg!"
-  typingSpeed: 0.05
+  typingSpeed: 0.04
   voiceSound: {fileID: 0}
   voicePitch: 1
   autoProgressLines: 
@@ -37,12 +39,12 @@ MonoBehaviour:
   autoProgressDelay: 1.5
   plantGiver: 1
   choices:
-  - dialogueIndex: 0
+  - dialogueIndex: 1
     choices:
     - "Hobusej\xF5hv"
     - "P\xE4risraigas"
     - "S\xF5najalg"
-    nextDialogueIndexes: 050000000500000001000000
+    nextDialogueIndexes: 060000000600000002000000
     isPointable: 1
     correctAnswers: 000001
   - dialogueIndex: 2
@@ -53,34 +55,28 @@ MonoBehaviour:
     nextDialogueIndexes: 06000000030000000600000001000000
     isPointable: 1
     correctAnswers: 000100
-  - dialogueIndex: 3
+  - dialogueIndex: 4
     choices:
     - "J\xF5ulu\xF5htu"
     - "Jaani\xF6\xF6"
     - "T\xE4iskuu \xF6\xF6"
-    nextDialogueIndexes: 070000000400000007000000
-    isPointable: 1
-    correctAnswers: 000100
-  - dialogueIndex: 4
-    choices:
-    - Parandab haavu
-    - See aitab ravida paelusse
-    - See toob head und
-    nextDialogueIndexes: 080000000900000008000000
+    nextDialogueIndexes: 080000000500000008000000
     isPointable: 1
     correctAnswers: 000100
   - dialogueIndex: 5
     choices:
-    - Proovi uuesti!
-    nextDialogueIndexes: 00000000
+    - Parandab haavu
+    - See aitab ravida paelusse
+    - See toob head und
+    nextDialogueIndexes: 090000000a00000009000000
     isPointable: 1
     correctAnswers: 000100
   - dialogueIndex: 6
     choices:
     - Proovi uuesti!
-    nextDialogueIndexes: 02000000
-    isPointable: 0
-    correctAnswers: 
+    nextDialogueIndexes: 01000000
+    isPointable: 1
+    correctAnswers: 000100
   - dialogueIndex: 7
     choices:
     - Proovi uuesti!
@@ -91,5 +87,11 @@ MonoBehaviour:
     choices:
     - Proovi uuesti!
     nextDialogueIndexes: 04000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 9
+    choices:
+    - Proovi uuesti!
+    nextDialogueIndexes: 05000000
     isPointable: 0
     correctAnswers: 

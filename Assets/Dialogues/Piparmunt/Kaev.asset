@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: Kaev
+  m_EditorClassIdentifier: 
+  npcName: Kaev
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Vasta \xF5igesti mu k\xFCsimustele kui soovid Piparm\xFCnti saada!"
+  - "Mis v\xE4rvi on piparm\xFCndi \xF5ied?"
+  - "Okei, \xF5ige. Aga kas sa tead millal \xF5itseb piparm\xFCnt?"
+  - "Sul on \xF5igus! Aga kuidas levib piparm\xFCnt?"
+  - "Tegelikult piparm\xFCnt levib nii seemnetega, nii juurev\xF5side abil kui ka
+    \xF5ite kaudu!"
+  - Ei, proovi veel kord.
+  - "See on vale vastus. M\xF5tle veel"
+  - "Oled n\xE4idanud, et tunned piparm\xFCnti. V\xF5ta see taim endaga kaasa ja
+    vii sinna, kus see saab tuua v\xE4rskust ja tarkust."
+  typingSpeed: 0.045
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 1
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - Edasi
+    nextDialogueIndexes: 01000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 1
+    choices:
+    - 'Kollased '
+    - 'Roosad '
+    - 'Valged '
+    nextDialogueIndexes: 050000000500000002000000
+    isPointable: 1
+    correctAnswers: 000001
+  - dialogueIndex: 2
+    choices:
+    - Mais ja juunis
+    - Juunist augustini
+    - Juulist septembrini
+    nextDialogueIndexes: 060000000600000003000000
+    isPointable: 1
+    correctAnswers: 000001
+  - dialogueIndex: 3
+    choices:
+    - "Juurev\xF5sude abil"
+    - 'Seemnetega '
+    - "\xD5ite kaudu "
+    nextDialogueIndexes: 040000000400000004000000
+    isPointable: 1
+    correctAnswers: 010101
+  - dialogueIndex: 4
+    choices:
+    - Yes! Edasi
+    nextDialogueIndexes: 07000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 6
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 02000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 5
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 01000000
+    isPointable: 0
+    correctAnswers: 

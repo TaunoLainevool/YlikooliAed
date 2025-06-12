@@ -18,6 +18,9 @@ MonoBehaviour:
   - "M\xE4lust ja teadmistest ta jutustab, Vanade tarkade k\xF5rval ta nutab. Teda
     nuusutades meel saab selgeks, Liialt s\xFC\xFCes, tunne raskeks. Mis taimest
     see m\xF5istatus on?"
+  - "On \xFCks legend, mille j\xE4rgi rosmariin oli kunagi valge\xF5ieline taim.
+    Kuid kui Maarja temast m\xF6\xF6dus ja oma mantli servaga teda puudutas, siis
+    sai temast taevasinise \xF5iega taim. Nii sai tavaline rohi p\xFChaks."
   typingSpeed: 0.045
   voiceSound: {fileID: 0}
   voicePitch: 1
@@ -25,4 +28,10 @@ MonoBehaviour:
   endDialogueLines: 
   autoProgressDelay: 1.5
   plantGiver: 0
-  choices: []
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "K\xFCsi vihjet"
+    nextDialogueIndexes: 01000000
+    isPointable: 0
+    correctAnswers: 
