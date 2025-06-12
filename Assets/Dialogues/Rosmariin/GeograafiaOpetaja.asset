@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: GeograafiaOpetaja
+  m_EditorClassIdentifier: 
+  npcName: "Geograafia \xD5petaja"
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Ammustel aegadel kattis Vahemere rannikut l\xF5hnav rosmariin, mille sinised
+    \xF5ied \xF5itsesid taeva all. Seda peeti p\xFChaks taimeks, millel oli v\xF5ime
+    tugevdada m\xE4lu, parandada haavu."
+  - "Kuid ajad muutusid \u2013 inimesed unustasid taime t\xE4henduse, selle v\xE4gi
+    n\xF5rgenes ja l\xF5puks kadus rosmariin maailmast t\xE4ielikult."
+  - "Ainult \xFCks viimane rosmariin \xF5itseb veel kuskil, kuid seda hoiab Neitsi
+    Maarja ise."
+  - Olen valinud Sinu rosmariini otsima - ma usun, et suudad Neitsi Maarja leida
+    ja tuua rosmariin maailmasse tagasi.
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices: []

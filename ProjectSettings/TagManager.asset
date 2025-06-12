@@ -12,6 +12,10 @@ TagManager:
   - Tulip
   - NPC counter
   - PointController
+  - NPC movement pointer
+  - Movement disabler
+  - Head
+  - Body
   layers:
   - Default
   - TransparentFX

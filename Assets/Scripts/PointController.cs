@@ -14,8 +14,8 @@ public class PointController : MonoBehaviour
 
     public void removePoints(int amount)
     {
-        if(playerPoints != 0)
-        playerPoints -= amount;
+        if (playerPoints != 0)
+            playerPoints -= amount;
 
     }
 

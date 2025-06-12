@@ -33,7 +33,11 @@ MonoBehaviour:
     - Kesk-Aasiast
     - Portugalist
     nextDialogueIndexes: 01000000010000000200000001000000
+    isPointable: 1
+    correctAnswers: 00000100
   - dialogueIndex: 1
     choices:
     - Proovi uuesti
     nextDialogueIndexes: 00000000
+    isPointable: 0
+    correctAnswers: 
