@@ -20,6 +20,8 @@ public class NPC : MonoBehaviour, IInteractible
 
     public GameObject replacementNPC;
 
+    public GameObject replaceableNPC;
+
     public NPCmovement npcMovement;
     MovementDisabler movementDisabler;
 
@@ -181,7 +183,7 @@ void DisplayCurrentLine(){
     void replaceNPC(){
         // Debug.Log(dialogueIndex +" "+ dialogueData.dialogueLines.Length);
         if(dialogueIndex+1 == dialogueData.dialogueLines.Length){
-            if (replacementNPC == null)
+            if (replacementNPC == null && replaceableNPC == null)
             {
                 // Debug.Log("There is a nully wully");
                 return;
@@ -189,7 +191,7 @@ void DisplayCurrentLine(){
             else
             {
                 // Debug.Log("No nully wully");
-                GameObject oldNPC = GameObject.FindGameObjectWithTag("Roheklubi juht");
+                GameObject oldNPC = replaceableNPC;
                 // Debug.Log("oldnpc "+oldNPC);
                 // Debug.Log("replaced");
                 replacementNPC.SetActive(true);

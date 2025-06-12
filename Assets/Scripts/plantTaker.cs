@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class plantTaker : MonoBehaviour, IInteractible
 {
@@ -23,7 +24,8 @@ public class plantTaker : MonoBehaviour, IInteractible
         obtainedPlant = GameObject.FindGameObjectWithTag("Plant");
         if (gatheredPlants == allPlants)
         {
-            npc.StartDialogue(4);
+            // npc.StartDialogue(4);
+            SceneManager.LoadSceneAsync("GameOver");
             Debug.Log("you diiiid iiiiiiit, gooooooooooood jooooooooooooooooobI");
         }
         else if (obtainedPlant == null)
