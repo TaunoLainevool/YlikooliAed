@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: AiaHaldjas
+  m_EditorClassIdentifier: 
+  npcName: Aia haldjas
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Olen roheline ja v\xE4rske, hinge toidan, teen su r\xF5\xF5msaks. Tees ja kommides
+    mind leiad, mis ma olen \u2013 kas sa tead? "
+  - "Midagi j\xE4i puudu \u2013 m\xF5tle veel natuke!"
+  - "Hmm\u2026 see k\xF5lab roheliselt, aga mitte p\xE4ris \xF5igesti. Proovi veel!"
+  - "See taim teeb pea selgeks ja hinge v\xE4rskeks. Teda pannakse teesse, \u0161okolaadi
+    ja isegi hambapastasse. Ja just temast on kogu see aed t\xE4is l\xF5hna."
+  - "\xD5ige vastus! V\xE4rskus suus ja selgus hinges \u2013 sa tunned t\xF5esti
+    piparm\xFCnti!"
+  typingSpeed: 0.045
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "Piparm\xFCnt"
+    - "T\u0161illipipar"
+    - Kaneel
+    - Rosmariin
+    nextDialogueIndexes: 04000000010000000100000002000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 1
+    choices:
+    - Proovi uuesti!
+    - "K\xFCsi vihjet"
+    nextDialogueIndexes: 0000000003000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 2
+    choices:
+    - Proovi uuesti!
+    - "K\xFCsi vihjet"
+    nextDialogueIndexes: 0000000003000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 3
+    choices:
+    - "Proovi n\xFC\xFCd"
+    nextDialogueIndexes: 00000000
+    isPointable: 0
+    correctAnswers: 

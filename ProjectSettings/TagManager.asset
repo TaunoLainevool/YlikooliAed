@@ -12,6 +12,13 @@ TagManager:
   - Tulip
   - NPC counter
   - PointController
+  - NPC movement pointer
+  - Movement disabler
+  - Head
+  - Body
+  - Fern
+  - Rosemary
+  - Peppermint
   layers:
   - Default
   - TransparentFX
