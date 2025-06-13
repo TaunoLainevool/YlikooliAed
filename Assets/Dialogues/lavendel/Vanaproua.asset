@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: Vanaproua
+  m_EditorClassIdentifier: 
+  npcName: 
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Tere, noor r\xE4ndur. Sa n\xE4ed v\xE4lja nagu keegi, kes armastab teadmisi."
+  - "Kas tead, miks lavendlit vanasti nii k\xF5rgelt hinnati?"
+  - "Lavendel on olnud v\xE4\xE4rtuslik taim juba sajandeid. Vana-Roomas kasutati
+    seda haavade puhastamiseks, keskajal aga ka kirikutes ja kodudes \xF5hu v\xE4rskendamiseks."
+  - "Lisaks oli lavendel oluline Prantsuse kultuuris \u2013 seda seostati puhtuse
+    ja rahuga."
+  - "N\xFC\xFCd aga sina \xFCtle mulle, miks lavendlit peeti vanasti nii v\xE4\xE4rtuslikuks
+    ja millistes ajaloolistes s\xFCndmustes seda kasutati?"
+  - "Hmm... see on huvitav arvamus, aga mitte p\xE4ris t\xF5si. Tegelikult kasutati
+    lavendlit eelk\xF5ige raviks ja l\xF5hnastamiseks."
+  - "Tubli! Just nii. Lavendel oli t\xF5esti oluline oma ravivate ja l\xF5hnastavate
+    omaduste t\xF5ttu."
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 000000
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Miks?
+    nextDialogueIndexes: 02000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 4
+    choices:
+    - "Raviks ja l\xF5hnastamiseks"
+    - Ainult paleede kaunistuseks
+    - "Arvati, et toob halba \xF5nne"
+    nextDialogueIndexes: 060000000500000005000000
+    isPointable: 1
+    correctAnswers: 010000
+  - dialogueIndex: 5
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 04000000
+    isPointable: 0
+    correctAnswers: 

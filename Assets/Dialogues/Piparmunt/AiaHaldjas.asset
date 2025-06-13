@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AiaHaldjas
   m_EditorClassIdentifier: 
   npcName: Aia haldjas
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: c0913f0941524674f8e192003d5a4fde, type: 3}
   dialogueLines:
   - "Olen roheline ja v\xE4rske, hinge toidan, teen su r\xF5\xF5msaks. Tees ja kommides
     mind leiad, mis ma olen \u2013 kas sa tead? "

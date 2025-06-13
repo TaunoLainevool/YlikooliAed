@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: OFFOrpheas
+  m_EditorClassIdentifier: 
+  npcName: Test NPC
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Kas tead, miks lavendlit peeti vanasti nii v\xE4\xE4rtuslikuks ja millistes
+    ajaloolistes s\xFCndmustes seda kasutati?"
+  - "Millised tingimused on lavendli kasvatamiseks k\xF5ige sobivamad ja miks see
+    taim just L\xF5una-Prantsusmaal h\xE4sti kasvab?"
+  - "Lavendlil on mitmeid kasutusviise peale parf\xFC\xFCmide. Kas oskad nimetada
+    v\xE4hemalt kolm viisi, kuidas inimesed seda igap\xE4evaselt kasutavad?"
+  - "Lavendel on olnud oluline kaubanduses juba sajandeid. Kas tead, millised tooted
+    ja turud on t\xE4nap\xE4eval lavendliga seotud?"
+  - VALE!
+  - "V\xE4ga hea, saad lavendli seemne"
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "Lavendlit kasutati vanasti antiseptikumina ning riiete ja ruumide l\xF5hnastamiseks. "
+    - Lavendlit kasutati ainult kuninglike paleede kaunistamiseks.
+    - "Lavendel oli keelatud taim, sest arvati, et see toob halba \xF5nne."
+    nextDialogueIndexes: 010000000400000004000000
+    isPointable: 1
+    correctAnswers: 010000
+  - dialogueIndex: 1
+    choices:
+    - "Lavendel vajab palju p\xE4ikest, h\xE4sti kuivendatud lubjarikast mulda ja
+      sooja kliimat, mida L\xF5una-Prantsusmaal leidub ohtralt."
+    - "Lavendel vajab niisket ja varjulist kasvukohta, et h\xE4sti kasvada."
+    - "Lavendel kasvab k\xF5ige paremini troopilises d\u017Eunglis koos vihmametsataimedega."
+    nextDialogueIndexes: 020000000400000004000000
+    isPointable: 1
+    correctAnswers: 010000
+  - dialogueIndex: 2
+    choices:
+    - "Lavendlit kasutatakse teena rahustava toime t\xF5ttu, eeterliku \xF5lina nahahoolduses
+      ning l\xF5hnakotikesena riiete vahel koide t\xF5rjumiseks."
+    - "Lavendlit kasutatakse peamiselt toiduv\xE4rvina, et anda roogadele sinist
+      v\xE4rvi."
+    - "Lavendel on tuntud oma v\xF5ime poolest parandada telepaatilisi v\xF5imeid."
+    nextDialogueIndexes: 030000000400000004000000
+    isPointable: 1
+    correctAnswers: 010000
+  - dialogueIndex: 3
+    choices:
+    - "Lavendlist valmistatakse eeterlikke \xF5lisid, seepi, kosmeetikatooteid ja
+      ravimteesid. Prantsusmaa, eriti Provence, on \xFCks peamisi lavendlit kasvatavaid
+      ja eksportivaid piirkondi."
+    - "Lavendel on keelatud kaubanduses, sest see sisaldab m\xFCrgiseid aineid."
+    - "Lavendel on peamiselt kasutusel ainult tekstiilit\xF6\xF6stuses, kus sellest
+      tehakse kangast."
+    nextDialogueIndexes: 050000000400000004000000
+    isPointable: 1
+    correctAnswers: 010000
+  - dialogueIndex: 4
+    choices:
+    - Uuesti
+    nextDialogueIndexes: 00000000
+    isPointable: 0
+    correctAnswers: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kaev
   m_EditorClassIdentifier: 
   npcName: Kaev
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 38ecc20a54effba4a87ae943d23f0e59, type: 3}
   dialogueLines:
   - "Vasta \xF5igesti mu k\xFCsimustele kui soovid Piparm\xFCnti saada!"
   - "Mis v\xE4rvi on piparm\xFCndi \xF5ied?"

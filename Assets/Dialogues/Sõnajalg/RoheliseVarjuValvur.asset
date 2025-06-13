@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RoheliseVarjuValvur
   m_EditorClassIdentifier: 
   npcName: Rohelise Varju Valvur
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 1e5cb1245f945d748b93839d6c7e6587, type: 3}
   dialogueLines:
   - "N\xE4en, et oled kuulanud metsa sosinaid. Aga \xFCtle mulle\u2026 kas sa suudad
     m\xF5istatuse lahendada?"

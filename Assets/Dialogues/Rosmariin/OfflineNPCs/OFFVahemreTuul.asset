@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OFFVahemreTuul
   m_EditorClassIdentifier: 
   npcName: Vahemere Tuul
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 994c0d34dd910674f83b8876afff6665, type: 3}
   dialogueLines:
   - "Mu s\xF5nad ootavad hetke. Mine esmalt raamatute v\xF5i taimede juurde \u2013
     alles siis saad minust kuulda."

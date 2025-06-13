@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IsaBenedictus
   m_EditorClassIdentifier: 
   npcName: Isa Benedictus
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 29302424257ca804ab79e671f4cb72e0, type: 3}
   dialogueLines:
   - "M\xE4lust ja teadmistest ta jutustab, Vanade tarkade k\xF5rval ta nutab. Teda
     nuusutades meel saab selgeks, Liialt s\xFC\xFCes, tunne raskeks. Mis taimest

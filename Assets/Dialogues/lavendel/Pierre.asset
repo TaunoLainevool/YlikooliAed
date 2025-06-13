@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: Pierre
+  m_EditorClassIdentifier: 
+  npcName: Kaupmees Pierre
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Lavendel on v\xE4ga populaarne kaubanduses. Seda kasutatakse eeterlikes \xF5lides,
+    seepides, kosmeetikas ja ravimtees."
+  - "Provence on \xFCks suurimaid lavendli tootjaid maailmas \u2013 inimesed \xFCle
+    kogu maailma otsivad seda kvaliteeti."
+  - "Lavendel on olnud oluline kaubanduses juba sajandeid. Kas tead, millised tooted
+    ja turud on t\xE4nap\xE4eval lavendliga seotud?"
+  - "Kahjuks ei vasta see t\xF5ele. Tegelikult on lavendel v\xE4ga levinud mitmetes
+    toodetes, eriti tervise- ja ilutoodetes."
+  - "\xD5ige vastus! Sa m\xF5istad h\xE4sti lavendli rolli majanduses."
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 000000
+  autoProgressDelay: 1.5
+  plantGiver: 1
+  choices:
+  - dialogueIndex: 2
+    choices:
+    - "\xD5li, seep, tee \u2013 Provence"
+    - "M\xFCrgine ja keelatud"
+    - Ainult kangaste jaoks
+    nextDialogueIndexes: 040000000300000003000000
+    isPointable: 1
+    correctAnswers: 010000

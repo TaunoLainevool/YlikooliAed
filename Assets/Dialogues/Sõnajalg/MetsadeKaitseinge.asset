@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
   m_Name: MetsadeKaitseinge
   m_EditorClassIdentifier: 
-  npcName: Metsade Kaitseinge
-  npcPortrait: {fileID: 0}
+  npcName: Metsade Kaitseingel
+  npcPortrait: {fileID: 21300000, guid: 40053c685e06274448ee496ac08e8230, type: 3}
   dialogueLines:
   - "Sa otsid taime, mis ei \xF5itse, eks? Aga tead, \xFCks p\xF5nev asi\u2026"
   - "S\xF5najalad ei kanna lilli ega seemneid \u2013 nende elu algab hoopis v\xE4ikestest

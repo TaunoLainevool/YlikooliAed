@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OFFMagdalena
   m_EditorClassIdentifier: 
   npcName: Magdalena
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 1ae2e12bca7f62d42bcac2a14f0e875f, type: 3}
   dialogueLines:
   - "Tule tagasi hiljem. \xDCks teine vestlus ootab sind enne mind."
   typingSpeed: 0.045

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OFFIsaBenedictus
   m_EditorClassIdentifier: 
   npcName: Isa Benedictus
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: e65639438304da34d821e45e73341e51, type: 3}
   dialogueLines:
   - Mine tegele oma asjadega!
   typingSpeed: 0.045

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VanadeOuudeTeadjamees
   m_EditorClassIdentifier: 
   npcName: Vanade Ouude Teadjamees
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: cc350ffeb13383049ad52b91742202b2, type: 3}
   dialogueLines:
   - "Huvitav, eks\u2026 k\xF5ik otsivad p\xE4ikese poole. Aga s\xF5najalg mitte."
   - "See taim kasvab rahulikult metsavarjus, isegi seal, kus valgus ei j\xF5ua \xFCldse."
