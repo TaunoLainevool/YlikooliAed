@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Couch
   m_EditorClassIdentifier: 
   npcName: Istuv tudeng
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 1187daa3adf268a409035711ea212bf3, type: 3}
   dialogueLines:
   - Las ma puhkan...
   - "Ma niigi juba v\xE4sinud nendest projektidest..."

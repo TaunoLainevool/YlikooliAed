@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Plant taker
   m_EditorClassIdentifier: 
   npcName: 
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: b3478824cd8494241bd54c9c18fcf621, type: 3}
   dialogueLines:
   - Gde taim???
   - "Ait\xFCma lavendli eest!"

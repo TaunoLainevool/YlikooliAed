@@ -945,8 +945,8 @@ PolygonCollider2D:
       - {x: -4.3613796, y: 6.0602703}
       - {x: -4.417685, y: 0.3336027}
       - {x: -4.44779, y: -0.8336028}
-      - {x: -4.4277616, y: -4.2510605}
-      - {x: 5.4502974, y: -4.1902237}
+      - {x: -3.965085, y: -10.635998}
+      - {x: 5.851283, y: -10.606003}
   m_UseDelaunayMesh: 0
 --- !u!1 &26749869
 GameObject:
@@ -38723,6 +38723,7 @@ GameObject:
   - component: {fileID: 1495215131}
   - component: {fileID: 1495215130}
   - component: {fileID: 1495215132}
+  - component: {fileID: 1495215133}
   m_Layer: 0
   m_Name: NPC (1)
   m_TagString: Untagged
@@ -38739,8 +38740,8 @@ Transform:
   m_GameObject: {fileID: 1495215127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.27, y: 13.82, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2}
+  m_LocalPosition: {x: 20.11, y: 13.06, z: 0}
+  m_LocalScale: {x: -0.25, y: 0.25, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 152936830}
@@ -38777,8 +38778,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.2, y: 0.25}
+  m_Offset: {x: 0.5107422, y: 1.5056992}
+  m_Size: {x: 2.1766357, y: 4.56147}
   m_Direction: 0
 --- !u!212 &1495215131
 SpriteRenderer:
@@ -38820,9 +38821,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -73662053, guid: 6fa292e64849fbd4e966e52de3d087d0, type: 3}
-  m_Color: {r: 0.22658107, g: 0.8301887, b: 0.090067655, a: 1}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 7a6c609b8b4ad1a4b81e5c290ecd8df2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38850,6 +38851,51 @@ MonoBehaviour:
   replacementNPC: {fileID: 0}
   replaceableNPC: {fileID: 0}
   npcMovement: {fileID: 0}
+--- !u!61 &1495215133
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495215127}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.3302193, y: -1.5247116}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.93, y: 8.3}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2338943, y: 3.8121643}
+  m_EdgeRadius: 0
 --- !u!1 &1513747034
 GameObject:
   m_ObjectHideFlags: 0
@@ -50383,9 +50429,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1908471970}
   - component: {fileID: 1908471969}
-  - component: {fileID: 1908471968}
   - component: {fileID: 1908471967}
   - component: {fileID: 1908471971}
+  - component: {fileID: 1908471972}
   m_Layer: 0
   m_Name: NPC (takes plants)
   m_TagString: Plant taker
@@ -50406,41 +50452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 1908471971}
---- !u!70 &1908471968
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908471966}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.2, y: 0.25}
-  m_Direction: 0
 --- !u!212 &1908471969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50482,7 +50493,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1303136648, guid: 6fa292e64849fbd4e966e52de3d087d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 093ca53d583f36f4fa56c7f154ea7352, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -50503,7 +50514,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.53, y: 4.49, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: -0.12, y: 0.12, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 547648574}
@@ -50526,6 +50537,51 @@ MonoBehaviour:
   replacementNPC: {fileID: 0}
   replaceableNPC: {fileID: 0}
   npcMovement: {fileID: 0}
+--- !u!61 &1908471972
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908471966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.023789883, y: -0.083028555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.49, y: 9.73}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.8714848, y: 9.071363}
+  m_EdgeRadius: 0
 --- !u!1 &1910119791
 GameObject:
   m_ObjectHideFlags: 0
@@ -53417,8 +53473,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2074125721}
   - component: {fileID: 2074125720}
-  - component: {fileID: 2074125722}
   - component: {fileID: 2074125723}
+  - component: {fileID: 2074125724}
   m_Layer: 0
   m_Name: Garden NPC
   m_TagString: Roheklubi juht
@@ -53467,7 +53523,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1303136648, guid: 6fa292e64849fbd4e966e52de3d087d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 093ca53d583f36f4fa56c7f154ea7352, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -53488,13 +53544,31 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.53, y: 4.49, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: -0.12, y: 0.12, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 547648574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &2074125722
-CapsuleCollider2D:
+--- !u!114 &2074125723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074125718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: f16c5aa1a185b7b40a66d19f4f9bad2d, type: 2}
+  dialogueIndex: 0
+  plantPrefab: {fileID: 0}
+  replacementNPC: {fileID: 1908471966}
+  replaceableNPC: {fileID: 2074125718}
+  npcMovement: {fileID: 0}
+--- !u!61 &2074125724
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53525,27 +53599,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.2, y: 0.25}
-  m_Direction: 0
---- !u!114 &2074125723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074125718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: f16c5aa1a185b7b40a66d19f4f9bad2d, type: 2}
-  dialogueIndex: 0
-  plantPrefab: {fileID: 0}
-  replacementNPC: {fileID: 1908471966}
-  replaceableNPC: {fileID: 2074125718}
-  npcMovement: {fileID: 0}
+  m_Offset: {x: 0.023789883, y: -0.083028555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.49, y: 9.73}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.8714848, y: 9.071363}
+  m_EdgeRadius: 0
 --- !u!1 &2085348058
 GameObject:
   m_ObjectHideFlags: 0
