@@ -20,7 +20,7 @@ MonoBehaviour:
   - "See on jah, \xFClikooliaed"
   - 'Sooviksid mind aidata? '
   - "Ma tean inimesi, kellelt v\xF5iks saada uusi ja ilusaid taimi \xFClikooliaeda."
-  - " Sinu \xFClesanne oleks nendega r\xE4\xE4kida ja veenda neid m\xF5ni taim meile
+  - "Sinu \xFClesanne oleks nendega r\xE4\xE4kida ja veenda neid m\xF5ni taim meile
     andma."
   - Mis kostad?
   - "Tule tagasi, kui m\xF5tled \xFCmber."
@@ -41,12 +41,18 @@ MonoBehaviour:
     - "See ongi \xFClikooliaed?"
     - '*torgi ringi*'
     nextDialogueIndexes: 0200000008000000
+    isPointable: 0
+    correctAnswers: 
   - dialogueIndex: 6
     choices:
     - "Teeme \xE4ra"
     - "Ei saa aidata, peab eksamiteks \xF5ppima"
     nextDialogueIndexes: 0a00000007000000
+    isPointable: 0
+    correctAnswers: 
   - dialogueIndex: 9
     choices:
     - vabandust...
     nextDialogueIndexes: 03000000
+    isPointable: 0
+    correctAnswers: 
