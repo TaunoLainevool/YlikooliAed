@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName ="NewNPCDialogue", menuName ="NPC dialogue")]
-public class NPCdialogue : ScriptableObject
+[CreateAssetMenu(fileName ="NewNPCDialogue", menuName ="NPC database dialogue")]
+public class DBdialogue : ScriptableObject
 {
-
+    public string gameName;
     public string npcName;
     public Sprite npcPortrait;
     public string[] dialogueLines;
@@ -23,7 +23,7 @@ public class NPCdialogue : ScriptableObject
 }
 
 [System.Serializable]
-public class DialogueChoice
+public class DialogueChoiceDB
 {
     public int dialogueIndex;//Dialogue line where choices appear
     public string[] choices;//Player response options

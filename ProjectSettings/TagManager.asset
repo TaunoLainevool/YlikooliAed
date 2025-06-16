@@ -16,6 +16,7 @@ TagManager:
   - Movement disabler
   - Head
   - Body
+  - Lavendli saladus
   layers:
   - Default
   - TransparentFX
