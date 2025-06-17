@@ -12,10 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3767b034c373c0a4eacd424aafadcd00, type: 3}
   m_Name: testDB
   m_EditorClassIdentifier: 
-  gameName: Lavendli saladus
   npcName: test
   npcPortrait: {fileID: 0}
-  dialogueLines: []
+  dialogueLines:
+  - "Lavendlil on mitmeid kasutusviise peale parf\xFC\xFCmide. Kas oskad nimetada
+    v\xE4hemalt kolm viisi, kuidas inimesed seda igap\xE4evaselt kasutavad?"
+  - "Mis v\xE4rvi on piparm\xFCndi \xF5ied?"
+  - "Millal \xF5itseb piparm\xFCnt?"
+  - "Millisel kindlal p\xE4eval hakati keskajal peterselli kasvatama vastavalt vanale
+    uskumusele?"
+  - "Kuidas seostatakse peterselli t\xE4nap\xE4eval toiduvalmistamises?"
+  gameTitle:
+  - Lavendli saladus
+  - "Piparm\xFCndi saladus"
+  - "Piparm\xFCndi saladus"
+  - Peterselli saladused
+  - Peterselli saladused
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
@@ -23,4 +35,52 @@ MonoBehaviour:
   endDialogueLines: 
   autoProgressDelay: 1.5
   plantGiver: 1
-  choices: []
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "Lavendlit kasutatakse teena rahustava toime t\xF5ttu, eeterliku \xF5lina nahahoolduses
+      ning l\xF5hnakotikesena riiete vahel koide t\xF5rjumiseks."
+    - "Lavendlit kasutatakse peamiselt toiduv\xE4rvina, et anda roogadele sinist
+      v\xE4rvi."
+    - "Lavendel on tuntud oma v\xF5ime poolest parandada telepaatilisi v\xF5imeid."
+    - "Lavendel oli v\xE4ga ilus."
+    nextDialogueIndexes: 01000000010000000100000001000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 1
+    choices:
+    - Sinine
+    - Punane
+    - Roheline
+    - Roosad
+    nextDialogueIndexes: 02000000020000000200000002000000
+    isPointable: 1
+    correctAnswers: 00000101
+  - dialogueIndex: 2
+    choices:
+    - Mai ja Juuni
+    - Juuni ja August
+    - Juuli ja September
+    - "M\xE4rts ja Aprill"
+    nextDialogueIndexes: 03000000030000000300000003000000
+    isPointable: 1
+    correctAnswers: 00000000
+  - dialogueIndex: 3
+    choices:
+    - "J\xF5ululaup\xE4eval"
+    - Suurel reedel
+    - "Jaanip\xE4eval"
+    - 4. Juuni
+    nextDialogueIndexes: 04000000040000000400000004000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 4
+    choices:
+    - Seda kasutatakse peamiselt magustoitudes.
+    - "Petersell on \xFCks populaarsemaid maitsetaimi, mida kasutatakse salatites,
+      ja paljudes roogades."
+    - Peterselli kasutatakse ainult jookides, et suurendada maitse intensiivsust.
+    - "Ebameeldiva l\xF5hnaga"
+    nextDialogueIndexes: 05000000050000000500000005000000
+    isPointable: 1
+    correctAnswers: 00010000

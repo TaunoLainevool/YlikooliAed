@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName ="NewNPCDialogue", menuName ="NPC database dialogue")]
+[CreateAssetMenu(fileName = "NewNPCDialogue", menuName = "NPC database dialogue")]
 public class DBdialogue : ScriptableObject
 {
-    public string gameName;
+    // public string gameName;
     public string npcName;
     public Sprite npcPortrait;
     public string[] dialogueLines;
+
+    public string[] gameTitle;
+
+
     public float typingSpeed = 0.05f;
     public AudioClip voiceSound;
     public float voicePitch = 1f;
@@ -18,8 +23,10 @@ public class DBdialogue : ScriptableObject
     public float autoProgressDelay = 1.5f;
     public bool plantGiver = true; //NPC gives plants
 
-    
+
+
     public DialogueChoice[] choices;
+
 }
 
 [System.Serializable]
@@ -30,5 +37,5 @@ public class DialogueChoiceDB
     public int[] nextDialogueIndexes;//Where choice leads
     public bool isPointable;
     public bool[] correctAnswers;//What answers give points
-  
+
 }

@@ -17,6 +17,8 @@ TagManager:
   - Head
   - Body
   - Lavendli saladus
+  - Database
+  - "Piparm\xFCndi saladus"
   layers:
   - Default
   - TransparentFX

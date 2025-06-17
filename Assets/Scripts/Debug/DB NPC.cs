@@ -29,10 +29,18 @@ public class DBNPC : MonoBehaviour, IInteractible
 
     private string optionalText;
 
+    private int[] usableDialogues = new int[999];
+    private string[] usableDialogueLines=new string[999];
+    private string[][] usableChoices = new string[999][]; 
+    private int tempIndex;
+    private string NPCtag;
+
+    //List<Questions> questionsFromDB = DBconnection.Instance.questionList;
 
 
     private void Start()
     {
+        //Debug.Log(questionsFromDB);
         hasGivenPlant = false;
         dialogueUI = DialogueController.Instance;
         GameObject pointControllerObj = GameObject.FindGameObjectWithTag("PointController");
@@ -40,6 +48,30 @@ public class DBNPC : MonoBehaviour, IInteractible
 
         GameObject movementDisablerObj = GameObject.FindGameObjectWithTag("Movement disabler");
         movementDisabler = movementDisablerObj.GetComponent<MovementDisabler>();
+        NPCtag = gameObject.tag;
+
+        for (int i = 0; i < dialogueData.dialogueLines.Length; i++)
+        {
+            // Debug.Log(i);
+            // Debug.Log(dialogueData.gameTitle[i]);
+            if (dialogueData.gameTitle[i] == NPCtag)
+            {
+                Debug.Log("activate");
+
+                usableDialogueLines[tempIndex] = dialogueData.dialogueLines[i];
+                Debug.Log(usableDialogueLines[tempIndex]);
+                usableChoices[tempIndex] = dialogueData.choices[i].choices;
+                Debug.Log(usableChoices[tempIndex][0]);
+                Debug.Log(usableChoices[tempIndex][1]);
+                Debug.Log(usableChoices[tempIndex][2]);
+                Debug.Log(usableChoices[tempIndex][3]);
+                usableDialogues[tempIndex] = i;
+                Debug.Log(usableDialogues[tempIndex]);
+                ++tempIndex;
+                Debug.Log(dialogueData.dialogueLines[0]);
+            }
+        }
+
 
     }
     public void Interact(){
@@ -75,51 +107,68 @@ public class DBNPC : MonoBehaviour, IInteractible
 
     }
     void NextLine(){
-        if(isTyping){
+        
+        if (isTyping)
+        {
             StopAllCoroutines();
-            dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
-            isTyping=false;
+            dialogueUI.SetDialogueText(usableDialogueLines[dialogueIndex]); //dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
+            isTyping = false;
+            // Debug.Log(dialogueData.gameTitle[dialogueIndex]);
+            // Debug.Log(dialogueData.choices[dialogueIndex].correctAnswers[0]);
+            // Debug.Log(dialogueData.choices[dialogueIndex].correctAnswers[1]);
+            // Debug.Log(dialogueData.choices[dialogueIndex].correctAnswers[2]);
+            // Debug.Log(dialogueData.choices[dialogueIndex].correctAnswers[3]);
         }
         
         dialogueUI.ClearChoices();
 
-        if(dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex]){
+        
+
+        if (dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
+        {
             EndDialogue();
             return;
         }
 
-        foreach(DialogueChoice dialogueChoice in dialogueData.choices){
-            if(dialogueChoice.dialogueIndex == dialogueIndex) {
+        
+
+        foreach (DialogueChoice dialogueChoice in dialogueData.choices) 
+        {
+            if (dialogueChoice.dialogueIndex == usableDialogues[dialogueIndex]/*dialogueIndex*/)
+            {
                 DisplayChoices(dialogueChoice);
                 return;
             }
         }
 
-        if(++dialogueIndex < dialogueData.dialogueLines.Length){
+        if(++dialogueIndex < usableDialogueLines.Length /*dialogueData.dialogueLines.Length*/){
             DisplayCurrentLine();
         }
         else{
             EndDialogue();
         }
     }
-    IEnumerator TypeLine(){
+    IEnumerator TypeLine() {
         isTyping = true;
         dialogueUI.SetDialogueText("");
-        foreach(char letter in dialogueData.dialogueLines[dialogueIndex]){
-            
-            dialogueUI.SetDialogueText(dialogueUI.dialogueText.text+=letter);
+        foreach (char letter in usableDialogueLines[dialogueIndex] /*dialogueData.dialogueLines[dialogueIndex]*/)
+        {
+
+            dialogueUI.SetDialogueText(dialogueUI.dialogueText.text += letter);
             yield return new WaitForSeconds(dialogueData.typingSpeed);
         }
         isTyping = false;
-        if(dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex]){
+        if (dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex]) {
             yield return new WaitForSeconds(dialogueData.autoProgressDelay);
             NextLine();
         }
     }
 
+
+
 void DisplayChoices(DialogueChoice choice){
         for (int i = 0; i < choice.choices.Length; i++) {
-            int nextIndex = choice.nextDialogueIndexes[i];
+            int nextIndex = /*choice.nextDialogueIndexes[i]*/ dialogueIndex+1;
             // Debug.Log(i);
             // Debug.Log(choice.correctAnswers[i]);
             int choiceIndex = i;
@@ -149,6 +198,11 @@ void DisplayChoices(DialogueChoice choice){
 }
 
 void ChooseOption(int nextIndex){
+    if (usableDialogueLines[dialogueIndex+1] == null)
+        {
+            EndDialogue();
+            return;
+        }
     dialogueIndex = nextIndex;
     dialogueUI.ClearChoices();
     DisplayCurrentLine();
