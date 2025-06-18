@@ -15,29 +15,12 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Kust tulbid p\xE4rinevad?"
-  - Vale vastus
-  - "\xD5ige vastus"
+  - Sa pole veel selleks vestluseks valmis.
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   autoProgressLines: 
   endDialogueLines: 00
   autoProgressDelay: 1.5
-  plantGiver: 1
-  choices:
-  - dialogueIndex: 0
-    choices:
-    - Skandinaaviast
-    - Hollandist
-    - Kesk-Aasiast
-    - Portugalist
-    nextDialogueIndexes: 01000000010000000200000001000000
-    isPointable: 1
-    correctAnswers: 00000100
-  - dialogueIndex: 1
-    choices:
-    - Proovi uuesti
-    nextDialogueIndexes: 00000000
-    isPointable: 0
-    correctAnswers: 
+  plantGiver: 0
+  choices: []

@@ -15,9 +15,19 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
+  - "Kuulsin, et otsid minu tulbisibulaid. T\xF5esta, et tead t\xF5esti midagi tulpidest.
+    Kui oled t\xF5eline aiandushuviline, siis see ei tohiks raske olla."
   - "Kust tulbid p\xE4rinevad?"
-  - Vale vastus
-  - "\xD5ige vastus"
+  - "Millises riigis toimus 17. sajandil \"tulbimaania\", kus tulpide hinnad t\xF5usid
+    tohutult k\xF5rgele?"
+  - "Miks s\xF5id inimesed Teise maailmas\xF5ja ajal tulbisibulaid?"
+  - "Ei-ei. See pole isegi ligil\xE4hedane. Proovi uuesti, kui tahad."
+  - "Prantsuse \xF5ukond hindas tulpe v\xE4ga ja need olid seal populaarsed, aga
+    tulbimaania \u2014 see t\xF5eline hullus hindadega \u2014 juhtus Hollandis. Proovi
+    uuesti."
+  - Huvitav teooria... aga vale. Proovi uuesti.
+  - "Tark! Tundub, et sa t\xF5esti tead, millest r\xE4\xE4gid. V\xF5ta, siin on su
+    tulbisibulad."
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
@@ -26,18 +36,47 @@ MonoBehaviour:
   autoProgressDelay: 1.5
   plantGiver: 1
   choices:
-  - dialogueIndex: 0
+  - dialogueIndex: 1
     choices:
     - Skandinaaviast
     - Hollandist
     - Kesk-Aasiast
     - Portugalist
-    nextDialogueIndexes: 01000000010000000200000001000000
+    nextDialogueIndexes: 04000000040000000200000004000000
     isPointable: 1
     correctAnswers: 00000100
-  - dialogueIndex: 1
+  - dialogueIndex: 2
+    choices:
+    - "T\xFCrgis"
+    - Prantsusmaal
+    - 'Hollandis '
+    - Itaalias
+    nextDialogueIndexes: 05000000050000000300000005000000
+    isPointable: 1
+    correctAnswers: 00000100
+  - dialogueIndex: 3
+    choices:
+    - Arvati, et need ravivad haigusi
+    - "Inimesed olid n\xE4ljas ja s\xF5id, mida leidus"
+    - "Neid kasutati looduslike v\xE4rvainete tootmiseks"
+    nextDialogueIndexes: 060000000700000006000000
+    isPointable: 1
+    correctAnswers: 000100
+  - dialogueIndex: 4
     choices:
     - Proovi uuesti
-    nextDialogueIndexes: 00000000
+    nextDialogueIndexes: 01000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 5
+    choices:
+    - Proovi ueusti
+    nextDialogueIndexes: 02000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 6
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 03000000
     isPointable: 0
     correctAnswers: 

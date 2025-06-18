@@ -15,9 +15,16 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Tahad pintsli? Siis r\xE4\xE4gi mulle kurb lugu"
-  - "See lugu oli t\xF5esti kurb. Siin on su pintsel"
-  - "See lugu ei ole eriti kurb.. R\xE4\xE4gi veel"
+  - "Tahad pintsli? Auh. Mina leidsin selle, seega kuulub see n\xFC\xFCd mulle."
+  - "Aga kui sul on seda t\xF5esti vaja\u2026 siis ma tahan midagi vastu saada."
+  - "Ma annan selle ainult t\xF5eliselt kurva loo eest. Kust sellist lugu leida \u2014
+    ma ei tea. Aga kui tood selle mulle, on pintsel sinu."
+  - Mm-mm... Ei. See ei ole kurb. See on lihtsalt... ebamugav. Proovi uuesti.
+  - "...Auh... See\u2026 oli t\xF5esti kurb. Mul tuli isegi v\xE4ike klomp kurku.
+    Olgu, sa oled selle v\xE4lja teeninud. Siin on sinu pintsel."
+  - "Aga ma kuulsin, et keegi nuttis kunagi seal tulpide vahel. \xC4kki see oli l\xF5vi?"
+  - "Ja tead, tulbid pole ainult legendides t\xE4htsad. Teise maailmas\xF5ja ajal,
+    kui Hollandis oli suur n\xE4lg, s\xF5id inimesed tulbisibulaid, et ellu j\xE4\xE4da."
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
@@ -25,4 +32,18 @@ MonoBehaviour:
   endDialogueLines: 
   autoProgressDelay: 1.5
   plantGiver: 0
-  choices: []
+  choices:
+  - dialogueIndex: 2
+    choices:
+    - "Lapsena ootas mu vana koer mind alati ukse juures. \xDChel p\xE4eval j\xE4in
+      hiljaks \u2014 ja teda polnudki enam."
+    - Ah... Ei tea...
+    nextDialogueIndexes: 0400000003000000
+    isPointable: 0
+    correctAnswers: 
+  - dialogueIndex: 3
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 02000000
+    isPointable: 0
+    correctAnswers: 

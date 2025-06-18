@@ -15,9 +15,7 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Tahad pintsli? Siis r\xE4\xE4gi mulle kurb lugu"
-  - "See lugu oli t\xF5esti kurb. Siin on su pintsel"
-  - "See lugu ei ole eriti kurb.. R\xE4\xE4gi veel"
+  - Auh... Mitte praegu.
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1

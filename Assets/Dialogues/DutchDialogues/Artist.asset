@@ -24,16 +24,4 @@ MonoBehaviour:
   endDialogueLines: 
   autoProgressDelay: 1.5
   plantGiver: 0
-  choices:
-  - dialogueIndex: 0
-    choices: []
-    nextDialogueIndexes: 
-  - dialogueIndex: 0
-    choices: []
-    nextDialogueIndexes: 
-  - dialogueIndex: 0
-    choices: []
-    nextDialogueIndexes: 
-  - dialogueIndex: 0
-    choices: []
-    nextDialogueIndexes: 
+  choices: []
