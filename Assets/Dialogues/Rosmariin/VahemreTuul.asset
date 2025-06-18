@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VahemreTuul
   m_EditorClassIdentifier: 
   npcName: Vahemere Tuul
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: f483df4fbc5382d4d86230d5f7e645e0, type: 3}
   dialogueLines:
   - "Oled j\xF5udnud Vahemere tuulde... Ainult need, kes kuulevad muistseid sosinaid,
     leiavad tee t\xF5eni."

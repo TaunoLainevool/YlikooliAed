@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: OFFKonn
+  m_EditorClassIdentifier: 
+  npcName: Konn
+  npcPortrait: {fileID: 21300000, guid: 73117b7a5e105c14c9bc69e997a52c99, type: 3}
+  dialogueLines:
+  - "Hehe! Sa vist vahele j\xE4tsid \xFChe vanema h\xE4\xE4le. Mine kuula enne seda
+    habemikku!"
+  typingSpeed: 0.04
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices: []

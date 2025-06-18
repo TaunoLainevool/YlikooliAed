@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: rohklubi juht
+  m_EditorClassIdentifier: 
+  npcName: Roheklubi Juht
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Mis sind \xFClikooliaeda toob?"
+  - Oled vast eksinud?
+  - "See on jah, \xFClikooliaed"
+  - 'Sooviksid mind aidata? '
+  - "Ma tean inimesi, kellelt v\xF5iks saada uusi ja ilusaid taimi \xFClikooliaeda."
+  - " Sinu \xFClesanne oleks nendega r\xE4\xE4kida ja veenda neid m\xF5ni taim meile
+    andma."
+  - Mis kostad?
+  - "Tule tagasi, kui m\xF5tled \xFCmber."
+  - Mis sa siin torgid?
+  - "Niigi on raske siin \xFCksinda teha k\xF5ike..."
+  - "V\xE4ga hea!"
+  - Ma tean, et esimese taime saab 2. korruselt.
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 000000
+  endDialogueLines: 000000000000000100000001
+  autoProgressDelay: 1.5
+  plantGiver: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - "See ongi \xFClikooliaed?"
+    - '*torgi ringi*'
+    nextDialogueIndexes: 0200000008000000
+  - dialogueIndex: 6
+    choices:
+    - "Teeme \xE4ra"
+    - "Ei saa aidata, peab eksamiteks \xF5ppima"
+    nextDialogueIndexes: 0a00000007000000
+  - dialogueIndex: 9
+    choices:
+    - vabandust...
+    nextDialogueIndexes: 03000000

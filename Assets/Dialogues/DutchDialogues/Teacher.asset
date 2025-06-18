@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: Teacher
+  m_EditorClassIdentifier: 
+  npcName: Teacher
+  npcPortrait: {fileID: 21300000, guid: 138bc206c019dbf46bb1296f8c5e832c, type: 3}
+  dialogueLines:
+  - "Ma ei maali tasuta. Kui soovite, et ma teile maaliksin, peate mulle maksma\u2026"
+  - "Mis? Sa ei tulnudki portree j\xE4rele?.. Ah, sa otsid hoopis tulbisibulaid?"
+  - "Hmm\u2026 Ma tean, kes v\xF5iks sulle neid anda. Aga k\xF5igepealt aita mind.
+    \xDCks koer viis mu pintsliga minema, ta on kusagil siin p\xF5llul."
+  - "R\xE4\xE4gi temaga. V\xF5ib-olla annab ta pintsli tagasi, kui l\xE4hened talle
+    \xF5igesti. Siis juhatan sind edasi \xF5igesse kohta."
+  - "Muide, kas sa teadsid, et Holland oli kunagi t\xE4iesti hull tulpide j\xE4rele?
+    Seda nimetati tulbimaania \u2014 hinnad l\xE4ksid lausa taevasse."
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices: []

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: Professor
+  m_EditorClassIdentifier: 
+  npcName: Professor Theophilos Myrtis
+  npcPortrait: {fileID: 21300000, guid: 230f853e0d8368148975c04f7b5eb1a3, type: 3}
+  dialogueLines:
+  - "Tere tulemast, teadushuviline. Maailmas pole palju taimi, millel oleks nii s\xFCgavad
+    juured ajaloos kui petersellil."
+  - "Olen olnud kunagi enamat kui vaid maitsetaim. Mu rohelus s\xE4rab t\xE4nap\xE4eva
+    toidulaudadel. Kuid oli aeg, mil mind viidi haudadele ja olin surma s\xFCmbol.
+    Kui mind \xF5igel ajal k\xFClvasid \u2013 Kes ma olen?"
+  - "Huvi on sul olemas, aga vastus mitte. M\xF5tle veel natuke ja proovi uuesti."
+  - "T\xE4pselt! Petersell oli Vana-Kreekas ja Roomas seotud nii elu kui surmaga.
+    Sa oled valmis kohtuma j\xE4rgmis(t)e teadmiste hoidjatega."
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Petersell
+    - Kurk
+    - Sibul
+    nextDialogueIndexes: 030000000200000002000000
+    isPointable: 1
+    correctAnswers: 010000
+  - dialogueIndex: 2
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 01000000
+    isPointable: 0
+    correctAnswers: 

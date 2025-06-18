@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: Agariste
+  m_EditorClassIdentifier: 
+  npcName: Agariste
+  npcPortrait: {fileID: 21300000, guid: 2f59a131136b64846bb2476478f369ce, type: 3}
+  dialogueLines:
+  - "Keskajal usuti, et petersell oli v\xE4ga eriline taim. Teda ei saanud kasvatada
+    iga\xFCks \u2014 vaid need, kel oli erilist sidet looduse v\xF5i eluandmisega.
+    Rahvajuttudes kasvatavad peterselli just n\xF5iad ja rasedad naised."
+  - "Kellel \xF5nnestus keskajal uskumuste j\xE4rgi peterselli kasvatada?"
+  - "See polnud p\xE4ris see, mida otsime. Kuula t\xE4helepanelikumalt ja proovi
+    uuesti."
+  - "\xD5ige! Ainult erilised inimesed suutsid seda \u2013 ja sina n\xE4id samuti
+    olevat \xFCks neist."
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - "N\xF5iad ja rasedad naised "
+    - "Need, kes lugesid enne k\xFClvamist loitse"
+    - Ravitsejad ja preestrid
+    - Need, kes istutasid igal aastaajal
+    nextDialogueIndexes: 03000000020000000200000002000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 2
+    choices:
+    - Proovi uuesti
+    nextDialogueIndexes: 01000000
+    isPointable: 0
+    correctAnswers: 

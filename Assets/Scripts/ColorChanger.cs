@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class ColorChanger : MonoBehaviour
     private SpriteRenderer bodyColor;
     private SpriteRenderer headColor;
     // Start is called before the first frame update
-    void Start()
+    void GetPlayerSprites()
     {
         headObj = GameObject.FindGameObjectWithTag("Head");
         bodyObj = GameObject.FindGameObjectWithTag("Body");
@@ -25,7 +26,14 @@ public class ColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        headColor.color = new Color(headRed, headGreen, headBlue);
-        bodyColor.color = new Color(bodyRed, bodyGreen, bodyBlue);
+        Debug.Log(headObj);
+        if (headObj == null)
+        {
+            GetPlayerSprites();
+        }
+
+        headColor.color = new Color(1 - headRed, 1 - headGreen, 1 - headBlue);
+        bodyColor.color = new Color(1 - bodyRed, 1 - bodyGreen, 1 - bodyBlue);
+        
     }
 }

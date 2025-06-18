@@ -7,7 +7,6 @@ using UnityEngine;
 public class NPCdialogue : ScriptableObject
 {
 
-
     public string npcName;
     public Sprite npcPortrait;
     public string[] dialogueLines;

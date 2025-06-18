@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: aaa
+  m_EditorClassIdentifier: 
+  npcName: "n\xE4idis"
+  npcPortrait: {fileID: 590293056, guid: c8f006a43a4a5d64a98476c12493a9c0, type: 3}
+  dialogueLines:
+  - hello
+  - eeeeeee
+  - aaaaaaa
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 000100
+  endDialogueLines: 000001
+  autoProgressDelay: 0.3
+  plantGiver: 0
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - 1. valik(algus)
+    - "2. valik(l\xF5pp)"
+    nextDialogueIndexes: 0000000002000000

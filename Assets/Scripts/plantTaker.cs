@@ -11,8 +11,11 @@ public class plantTaker : MonoBehaviour, IInteractible
     GameObject lavenderPlant;
     GameObject parsleyPlant;
     GameObject tulipPlant;
+    GameObject peppermintPlant;
+    GameObject RosemaryPlant;
+    GameObject fernPlant;
     public NPC npc;
-    private int allPlants = 3;
+    private int allPlants = 6;
     private int gatheredPlants = 0;
     public bool CanInteract()
     {
@@ -59,7 +62,24 @@ public class plantTaker : MonoBehaviour, IInteractible
                     tulipPlant.transform.GetChild(0).gameObject.SetActive(true);
                     gatheredPlants += 1;
                     break;
-
+                case "Sõnajalg(Clone)":
+                    Debug.Log("There is a tulip");
+                    npc.StartDialogue(4);
+                    fernPlant.transform.GetChild(0).gameObject.SetActive(true);
+                    gatheredPlants += 1;
+                    break;
+                case "Rosmariin(Clone)":
+                    Debug.Log("There is a tulip");
+                    npc.StartDialogue(6);
+                    RosemaryPlant.transform.GetChild(0).gameObject.SetActive(true);
+                    gatheredPlants += 1;
+                    break;
+                case "Piparmünt(Clone)":
+                    Debug.Log("There is a tulip");
+                    npc.StartDialogue(5);
+                    peppermintPlant.transform.GetChild(0).gameObject.SetActive(true);
+                    gatheredPlants += 1;
+                    break;
                 default:
                     Debug.Log("default");
 
@@ -76,6 +96,9 @@ public class plantTaker : MonoBehaviour, IInteractible
         lavenderPlant = GameObject.FindGameObjectWithTag("Lavender");
         parsleyPlant = GameObject.FindGameObjectWithTag("Parsley");
         tulipPlant = GameObject.FindGameObjectWithTag("Tulip");
+        fernPlant = GameObject.FindGameObjectWithTag("Fern");
+        peppermintPlant = GameObject.FindGameObjectWithTag("Peppermint");
+        RosemaryPlant = GameObject.FindGameObjectWithTag("Rosemary");
   
     }
 

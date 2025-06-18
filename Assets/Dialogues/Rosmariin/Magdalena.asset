@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Magdalena
   m_EditorClassIdentifier: 
   npcName: Magdalena
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: b6d3467d20178f844a30b100530d5759, type: 3}
   dialogueLines:
   - "Kui soovid maailma taas rosmariini tuua, pead t\xF5estama, et tead selle saladusi.
     Kuula t\xE4helepanelikult!"

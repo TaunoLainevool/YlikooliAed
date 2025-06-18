@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3767b034c373c0a4eacd424aafadcd00, type: 3}
+  m_Name: testDB
+  m_EditorClassIdentifier: 
+  npcName: test
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Lavendlil on mitmeid kasutusviise peale parf\xFC\xFCmide. Kas oskad nimetada
+    v\xE4hemalt kolm viisi, kuidas inimesed seda igap\xE4evaselt kasutavad?"
+  - "Mis v\xE4rvi on piparm\xFCndi \xF5ied?"
+  - "Millal \xF5itseb piparm\xFCnt?"
+  - "Millisel kindlal p\xE4eval hakati keskajal peterselli kasvatama vastavalt vanale
+    uskumusele?"
+  - "Kuidas seostatakse peterselli t\xE4nap\xE4eval toiduvalmistamises?"
+  - "Kas tead, miks lavendlit peeti vanasti nii v\xE4\xE4rtuslikuks ja millistes
+    ajaloolistes s\xFCndmustes seda kasutati?"
+  - "Millised tingimused on lavendli kasvatamiseks k\xF5ige sobivamad ja miks see
+    taim just L\xF5una-Prantsusmaal h\xE4sti kasvab?"
+  - "Kuidas levib piparm\xFCnt?"
+  - "Keskajal usuti, et peterselli kasvatamine \xF5nnestub ainult"
+  - "Kust tulbid p\xE4rinevad?"
+  - "Millises riigis toimus 17. sajandil \"tulbimaania\", kus tulpide hinnad t\xF5usid
+    tohutult k\xF5rgele?"
+  - "Miks hakkasid inimesed Amsterdamis Teise maailmas\xF5ja ajal tulbisibulaid s\xF6\xF6ma?"
+  - "M\xE4lust ja teadmistest ta jutustab, vanade tarkade k\xF5rval ta nutab.Teda
+    nuusutades meel saab selgeks, liialt s\xFC\xFCes, tunne raskeks. Mis taimest
+    see m\xF5istatus on?"
+  - "Mere kastest nime saanud, meeli ergutav ja kuum. P\xF5ldudel ja aedades ma,
+    kuid toas v\xF5in kasvada ka. Kes ma olen?"
+  - Ma olin kord valge, kuid siniseks sain, kui Maarja mind katsus oma mantli all
+    lai. Miks muutusin ma?
+  - "Ma ei \xF5itse kunagi, kuid jaanip\xE4eva \xF6\xF6l mind otsitakse. Mul pole
+    seemneid, kuid mu lapsed reisivad tuulega. Mis ma olen?"
+  - "Kuidas s\xF5najalad paljunevad?"
+  - "Milline s\xFCndmus on seotud s\xF5najalgadega?\n"
+  - "Mis teeb s\xF5najala meditsiiniliselt oluliseks?"
+  gameTitle:
+  - Lavendli saladus
+  - "Piparm\xFCndi saladus"
+  - "Piparm\xFCndi saladus"
+  - Peterselli saladused
+  - Peterselli saladused
+  - Lavendli saladus
+  - Lavendli saladus
+  - "Piparm\xFCndi saladus"
+  - Peterselli saladused
+  - Kadunud tulp
+  - Kadunud tulp
+  - Kadunud tulp
+  - Viimane Rosmariin
+  - Viimane Rosmariin
+  - "Tuulte h\xE4\xE4led"
+  - "S\xF5najalg"
+  - "S\xF5najalg"
+  - "S\xF5najalg"
+  - "S\xF5najalg"
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 1
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "Lavendlit kasutatakse teena rahustava toime t\xF5ttu, eeterliku \xF5lina nahahoolduses
+      ning l\xF5hnakotikesena riiete vahel koide t\xF5rjumiseks."
+    - "Lavendlit kasutatakse peamiselt toiduv\xE4rvina, et anda roogadele sinist
+      v\xE4rvi."
+    - "Lavendel on tuntud oma v\xF5ime poolest parandada telepaatilisi v\xF5imeid."
+    - "Lavendel oli v\xE4ga ilus."
+    nextDialogueIndexes: 01000000010000000100000001000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 1
+    choices:
+    - Sinine
+    - Punane
+    - Roheline
+    - Roosad
+    nextDialogueIndexes: 02000000020000000200000002000000
+    isPointable: 1
+    correctAnswers: 00000101
+  - dialogueIndex: 2
+    choices:
+    - Mai ja Juuni
+    - Juuni ja August
+    - Juuli ja September
+    - "M\xE4rts ja Aprill"
+    nextDialogueIndexes: 03000000030000000300000003000000
+    isPointable: 1
+    correctAnswers: 00000000
+  - dialogueIndex: 3
+    choices:
+    - "J\xF5ululaup\xE4eval"
+    - Suurel reedel
+    - "Jaanip\xE4eval"
+    - 4. Juuni
+    nextDialogueIndexes: 04000000040000000400000004000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 4
+    choices:
+    - Seda kasutatakse peamiselt magustoitudes.
+    - "Petersell on \xFCks populaarsemaid maitsetaimi, mida kasutatakse salatites,
+      ja paljudes roogades."
+    - Peterselli kasutatakse ainult jookides, et suurendada maitse intensiivsust.
+    - "Ebameeldiva l\xF5hnaga"
+    nextDialogueIndexes: 05000000050000000500000005000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 5
+    choices:
+    - Lavendlit kasutati vanasti antiseptikuna
+    - Lavendlit kasutati ainult kuninglike paleede kaunistamiseks
+    - "Lavendel oli keelatud taim, sest arvati, et see toob halba \xF5nne"
+    - Lavendlit kasutati Prantsuse revolutsioonis vapina
+    nextDialogueIndexes: 06000000060000000600000006000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 6
+    choices:
+    - "Lavendel vajab palju p\xE4ikest, h\xE4sti kuivendatud lubjarikast mulda ja
+      sooja kliimat"
+    - "Lavendel vajab niisket ja varjulist kasvukohta, et h\xE4sti kasvada"
+    - "Lavendel kasvab k\xF5ige paremini troopilises d\u017Eunglis koos vihmametsataimedega"
+    - "Lavendel ei vaja erilisi tingimusi ja kasvab h\xE4sti igal pool"
+    nextDialogueIndexes: 07000000070000000700000007000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 7
+    choices:
+    - "Juurtev\xF5sude abil"
+    - Seemnetega
+    - "\xD5ite kaudu"
+    - "K\xF5ik kolm"
+    nextDialogueIndexes: 08000000080000000800000008000000
+    isPointable: 1
+    correctAnswers: 00000101
+  - dialogueIndex: 8
+    choices:
+    - "N\xF5idadel ja resedatel naistel"
+    - Ravistajatel ja presstritel
+    - "P\xF5llumajanduse spetsialistidel ja teadlastel"
+    - Neil, kes istutasid peterselli igal aastaajal
+    nextDialogueIndexes: 09000000090000000900000009000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 9
+    choices:
+    - Hollandist
+    - Kesk-Aasiast
+    - Prantsusmaalt
+    - Skandinaaviast
+    nextDialogueIndexes: 0a0000000a0000000a0000000a000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 10
+    choices:
+    - "T\xFCrgis"
+    - Prantsusmaal
+    - Hollandis
+    - Inglismaal
+    nextDialogueIndexes: 0b0000000b0000000b0000000b000000
+    isPointable: 1
+    correctAnswers: 00000000
+  - dialogueIndex: 11
+    choices:
+    - "Arvati, et tulbisibulate s\xF6\xF6mine ravib haigusi"
+    - Avastati, et tulbisibul sisaldab hulganisti vitamiine ning annab inimesele
+      rohkem energiat
+    - "Inimesed olid n\xE4ljah\xE4das, ning see oli \xFCks ainukesi saadaoleval toite"
+    - "Tulbisibulad maitsesid v\xE4ga h\xE4sti"
+    nextDialogueIndexes: 0c0000000c0000000c0000000c000000
+    isPointable: 1
+    correctAnswers: 00000000
+  - dialogueIndex: 12
+    choices:
+    - Rosmariin
+    - Tulp
+    - Petersell
+    - "Piparm\xFCnt"
+    nextDialogueIndexes: 0d0000000d0000000d0000000d000000
+    isPointable: 1
+    correctAnswers: 01000000
+  - dialogueIndex: 13
+    choices:
+    - "Piparm\xFCnt"
+    - Rosmariin
+    - Petersell
+    - Tulp
+    nextDialogueIndexes: 0e0000000e0000000e0000000e000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 14
+    choices:
+    - Sest Maarja nuttis mu peale
+    - Sest Maarja sinine mantel puudutas mind
+    - "Sest p\xE4ike paistis minule kaua peale"
+    - Sest taevas langes mu peale
+    nextDialogueIndexes: 0f0000000f0000000f0000000f000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 15
+    choices:
+    - "Hobusej\xF5hv"
+    - "P\xE4risraigas"
+    - "S\xF5najalg"
+    - Jaaniuss
+    nextDialogueIndexes: 10000000100000001000000010000000
+    isPointable: 1
+    correctAnswers: 00000000
+  - dialogueIndex: 16
+    choices:
+    - Seemnetega
+    - Eostega
+    - Juurtega
+    - "K\xF5ik kolm"
+    nextDialogueIndexes: 11000000110000001100000011000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 17
+    choices:
+    - "J\xF5ulu\xF5htu"
+    - "Jaani\xF6\xF6"
+    - "T\xE4iskuu \xF6\xF6"
+    - "Vabariigi aastap\xE4ev"
+    nextDialogueIndexes: 12000000120000001200000012000000
+    isPointable: 1
+    correctAnswers: 00010000
+  - dialogueIndex: 18
+    choices:
+    - Parandab haavu
+    - See aitab ravida paelusse
+    - See toob head und
+    - Annab energiat
+    nextDialogueIndexes: 13000000130000001300000013000000
+    isPointable: 1
+    correctAnswers: 00010000

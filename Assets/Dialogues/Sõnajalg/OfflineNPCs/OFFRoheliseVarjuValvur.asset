@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
+  m_Name: OFFRoheliseVarjuValvur
+  m_EditorClassIdentifier: 
+  npcName: Rohelise Varju Valvur
+  npcPortrait: {fileID: 21300000, guid: 195f171493738524f8ff03b62bc6b29b, type: 3}
+  dialogueLines:
+  - "Mets ei usalda kiirustamist. Kolm h\xE4\xE4lt pead enne kuulma \u2013 siis tulgu
+    tuulevastus."
+  typingSpeed: 0.04
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  plantGiver: 0
+  choices: []
