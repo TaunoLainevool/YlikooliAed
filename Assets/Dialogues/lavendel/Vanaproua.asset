@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
   m_Name: Vanaproua
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Vanaproua
   npcPortrait: {fileID: 0}
   dialogueLines:
   - "Tere, noor r\xE4ndur. Sa n\xE4ed v\xE4lja nagu keegi, kes armastab teadmisi."

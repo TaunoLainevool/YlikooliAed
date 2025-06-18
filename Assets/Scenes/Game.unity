@@ -2100,7 +2100,7 @@ Transform:
   m_GameObject: {fileID: 119074556}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.63, y: 8.8, z: 0}
+  m_LocalPosition: {x: 42.63, y: 8.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2418,9 +2418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueData: {fileID: 11400000, guid: c1179d4c02e06924cb41eed7d6d5f297, type: 2}
   dialogueIndex: 0
-  plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
+  plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
   replaceableNPC: {fileID: 0}
   npcMovement: {fileID: 0}
@@ -6066,11 +6066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueData: {fileID: 11400000, guid: 0461ed02e6ba71a4b931b39671f5f610, type: 2}
   dialogueIndex: 0
-  plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
-  replacementNPC: {fileID: 0}
-  replaceableNPC: {fileID: 0}
+  plantPrefab: {fileID: 0}
+  replacementNPC: {fileID: 483282346}
+  replaceableNPC: {fileID: 2095399791}
   npcMovement: {fileID: 0}
 --- !u!212 &206272913
 SpriteRenderer:
@@ -14151,7 +14151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueData: {fileID: 11400000, guid: cbcb83652e501a6499e7ba8a141dfdfa, type: 2}
   dialogueIndex: 0
   plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
   replacementNPC: {fileID: 0}
@@ -18664,11 +18664,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueData: {fileID: 11400000, guid: feb8b4b9e84f41c408e7e4c153d8de28, type: 2}
   dialogueIndex: 0
-  plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
-  replacementNPC: {fileID: 0}
-  replaceableNPC: {fileID: 0}
+  plantPrefab: {fileID: 0}
+  replacementNPC: {fileID: 206272909}
+  replaceableNPC: {fileID: 149486266}
   npcMovement: {fileID: 0}
 --- !u!212 &626967624
 SpriteRenderer:
@@ -43969,9 +43969,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
   dialogueIndex: 0
-  plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
-  replacementNPC: {fileID: 0}
-  replaceableNPC: {fileID: 0}
+  plantPrefab: {fileID: 0}
+  replacementNPC: {fileID: 626967620}
+  replaceableNPC: {fileID: 1685230990}
   npcMovement: {fileID: 0}
 --- !u!212 &1581993379
 SpriteRenderer:
@@ -47944,9 +47944,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueData: {fileID: 11400000, guid: 193b54f5edb892d4a89f45fc67982f28, type: 2}
   dialogueIndex: 0
-  plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
+  plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
   replaceableNPC: {fileID: 0}
   npcMovement: {fileID: 0}
@@ -57888,9 +57888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d05bc73c03cc574d8aeff27ad5c3008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a18ecfa88d897474e9fb4d36ce3ded78, type: 2}
+  dialogueData: {fileID: 11400000, guid: b13681f17f05afa4ea5d7a8cad6757f8, type: 2}
   dialogueIndex: 0
-  plantPrefab: {fileID: 6280134591161384296, guid: c9fba7ef8f4f9bf4ba5d65240756840b, type: 3}
+  plantPrefab: {fileID: 0}
   replacementNPC: {fileID: 0}
   replaceableNPC: {fileID: 0}
   npcMovement: {fileID: 0}

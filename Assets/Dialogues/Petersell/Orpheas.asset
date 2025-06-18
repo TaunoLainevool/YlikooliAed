@@ -12,19 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
   m_Name: Orpheas
   m_EditorClassIdentifier: 
-  npcName: Test NPC
+  npcName: Orpheas
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Kas tead, miks lavendlit peeti vanasti nii v\xE4\xE4rtuslikuks ja millistes
-    ajaloolistes s\xFCndmustes seda kasutati?"
-  - "Millised tingimused on lavendli kasvatamiseks k\xF5ige sobivamad ja miks see
-    taim just L\xF5una-Prantsusmaal h\xE4sti kasvab?"
-  - "Lavendlil on mitmeid kasutusviise peale parf\xFC\xFCmide. Kas oskad nimetada
-    v\xE4hemalt kolm viisi, kuidas inimesed seda igap\xE4evaselt kasutavad?"
-  - "Lavendel on olnud oluline kaubanduses juba sajandeid. Kas tead, millised tooted
-    ja turud on t\xE4nap\xE4eval lavendliga seotud?"
-  - VALE!
-  - "V\xE4ga hea, saad lavendli seemne"
+  - "Keskajal arvati, et peterselli saab edukalt kasvatada ainult kindlal p\xE4eval
+    \u2014 Suurel reedel. Sellel oli uskumustes eriline j\xF5ud."
+  - "Millisel kindlal p\xE4eval hakati keskajal peterselli kasvatama?"
+  - "Tegelikult sinu vastus ei vasta t\xF5ele!"
+  - "Su m\xF5istus on terav. Aga n\xFC\xFCd k\xFClasta kokka nimega Phytalos. Tema
+    r\xE4\xE4gib sulle, kuidas peterselli t\xE4nap\xE4eval austatakse."
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
@@ -33,47 +29,18 @@ MonoBehaviour:
   autoProgressDelay: 1.5
   plantGiver: 0
   choices:
-  - dialogueIndex: 0
-    choices:
-    - "Lavendlit kasutati vanasti antiseptikumina ning riiete ja ruumide l\xF5hnastamiseks. "
-    - Lavendlit kasutati ainult kuninglike paleede kaunistamiseks.
-    - "Lavendel oli keelatud taim, sest arvati, et see toob halba \xF5nne."
-    nextDialogueIndexes: 010000000400000004000000
-    isPointable: 1
-    correctAnswers: 010000
   - dialogueIndex: 1
     choices:
-    - "Lavendel vajab palju p\xE4ikest, h\xE4sti kuivendatud lubjarikast mulda ja
-      sooja kliimat, mida L\xF5una-Prantsusmaal leidub ohtralt."
-    - "Lavendel vajab niisket ja varjulist kasvukohta, et h\xE4sti kasvada."
-    - "Lavendel kasvab k\xF5ige paremini troopilises d\u017Eunglis koos vihmametsataimedega."
-    nextDialogueIndexes: 020000000400000004000000
+    - Suurel reedel
+    - 29. veebruaril
+    - "Esimesel p\xFChap\xE4eval p\xE4rast jaanip\xE4eva"
+    - Kui kukk laulis kolm korda enne koitu
+    nextDialogueIndexes: 03000000020000000200000002000000
     isPointable: 1
-    correctAnswers: 010000
+    correctAnswers: 01000000
   - dialogueIndex: 2
     choices:
-    - "Lavendlit kasutatakse teena rahustava toime t\xF5ttu, eeterliku \xF5lina nahahoolduses
-      ning l\xF5hnakotikesena riiete vahel koide t\xF5rjumiseks."
-    - "Lavendlit kasutatakse peamiselt toiduv\xE4rvina, et anda roogadele sinist
-      v\xE4rvi."
-    - "Lavendel on tuntud oma v\xF5ime poolest parandada telepaatilisi v\xF5imeid."
-    nextDialogueIndexes: 030000000400000004000000
-    isPointable: 1
-    correctAnswers: 010000
-  - dialogueIndex: 3
-    choices:
-    - "Lavendlist valmistatakse eeterlikke \xF5lisid, seepi, kosmeetikatooteid ja
-      ravimteesid. Prantsusmaa, eriti Provence, on \xFCks peamisi lavendlit kasvatavaid
-      ja eksportivaid piirkondi."
-    - "Lavendel on keelatud kaubanduses, sest see sisaldab m\xFCrgiseid aineid."
-    - "Lavendel on peamiselt kasutusel ainult tekstiilit\xF6\xF6stuses, kus sellest
-      tehakse kangast."
-    nextDialogueIndexes: 050000000400000004000000
-    isPointable: 1
-    correctAnswers: 010000
-  - dialogueIndex: 4
-    choices:
-    - Uuesti
-    nextDialogueIndexes: 00000000
+    - Proovi uuesti
+    nextDialogueIndexes: 01000000
     isPointable: 0
     correctAnswers: 

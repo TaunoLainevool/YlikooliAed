@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32577e2f257f6b145befdf65b0833234, type: 3}
   m_Name: Dog
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Koer
   npcPortrait: {fileID: 0}
   dialogueLines:
   - "Tahad pintsli? Auh. Mina leidsin selle, seega kuulub see n\xFC\xFCd mulle."
