@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Vanaproua
   m_EditorClassIdentifier: 
   npcName: Vanaproua
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: a819d8bfd734eb244909cce47d2f075e, type: 3}
   dialogueLines:
   - "Tere, noor r\xE4ndur. Sa n\xE4ed v\xE4lja nagu keegi, kes armastab teadmisi."
   - "Kas tead, miks lavendlit vanasti nii k\xF5rgelt hinnati?"

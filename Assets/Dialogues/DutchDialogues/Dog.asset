@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dog
   m_EditorClassIdentifier: 
   npcName: Koer
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 4f2a6276557b0514fa27e4b0e053a86b, type: 3}
   dialogueLines:
   - "Tahad pintsli? Auh. Mina leidsin selle, seega kuulub see n\xFC\xFCd mulle."
   - "Aga kui sul on seda t\xF5esti vaja\u2026 siis ma tahan midagi vastu saada."

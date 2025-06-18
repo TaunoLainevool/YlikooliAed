@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Colette
   m_EditorClassIdentifier: 
   npcName: "Parf\xFC\xFCmikunstnik Colette "
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: d41a5cc8e11000e4b80675711571fd9e, type: 3}
   dialogueLines:
   - "Lavendel ei ole ainult parf\xFC\xFCmide koostisosa. Paljud inimesed joovad lavendliteed,
     et rahuneda."

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kokk
   m_EditorClassIdentifier: 
   npcName: Phytalos
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 42f4d9a936fc54d4c8e9f57b6f7e9277, type: 3}
   dialogueLines:
   - "Hei! Petersell on \xFCks mu k\xF6\xF6gi t\xE4httaimi! T\xE4nap\xE4eval kasutatakse
     seda igal pool \u2014 v\xE4rsketes salatites, suppides, pastades, isegi v\xF5ileibadel.

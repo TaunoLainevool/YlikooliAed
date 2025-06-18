@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Professor
   m_EditorClassIdentifier: 
   npcName: Professor Theophilos Myrtis
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 230f853e0d8368148975c04f7b5eb1a3, type: 3}
   dialogueLines:
   - "Tere tulemast, teadushuviline. Maailmas pole palju taimi, millel oleks nii s\xFCgavad
     juured ajaloos kui petersellil."

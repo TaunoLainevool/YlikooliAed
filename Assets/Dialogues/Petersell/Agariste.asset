@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Agariste
   m_EditorClassIdentifier: 
   npcName: Agariste
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 2f59a131136b64846bb2476478f369ce, type: 3}
   dialogueLines:
   - "Keskajal usuti, et petersell oli v\xE4ga eriline taim. Teda ei saanud kasvatada
     iga\xFCks \u2014 vaid need, kel oli erilist sidet looduse v\xF5i eluandmisega.

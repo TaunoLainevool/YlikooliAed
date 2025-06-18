@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OFFOrpheas
   m_EditorClassIdentifier: 
   npcName: Orpheas
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: f76eed44c620ece4583a7e1a8f47cf6d, type: 3}
   dialogueLines:
   - "T\xE4hed ei ole veel \xF5iges asendis... tule hiljem."
   typingSpeed: 0.05

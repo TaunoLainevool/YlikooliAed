@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lion
   m_EditorClassIdentifier: 
   npcName: "L\xF5vi"
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 0e3c075b755700a49ab91070cadf73c4, type: 3}
   dialogueLines:
   - "Kuulsin, et otsid minu tulbisibulaid. T\xF5esta, et tead t\xF5esti midagi tulpidest.
     Kui oled t\xF5eline aiandushuviline, siis see ei tohiks raske olla."

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pierre
   m_EditorClassIdentifier: 
   npcName: Kaupmees Pierre
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 0add4c7324fdc5d43b3ec9b132d9e1d7, type: 3}
   dialogueLines:
   - "Lavendel on v\xE4ga populaarne kaubanduses. Seda kasutatakse eeterlikes \xF5lides,
     seepides, kosmeetikas ja ravimtees."

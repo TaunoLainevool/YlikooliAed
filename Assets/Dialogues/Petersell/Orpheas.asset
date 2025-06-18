@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Orpheas
   m_EditorClassIdentifier: 
   npcName: Orpheas
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: e869dbfbc8f714048830048c223190bc, type: 3}
   dialogueLines:
   - "Keskajal arvati, et peterselli saab edukalt kasvatada ainult kindlal p\xE4eval
     \u2014 Suurel reedel. Sellel oli uskumustes eriline j\xF5ud."
