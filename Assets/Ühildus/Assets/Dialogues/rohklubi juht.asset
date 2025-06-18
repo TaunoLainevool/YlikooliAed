@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: rohklubi juht
   m_EditorClassIdentifier: 
   npcName: Roheklubi Juht
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: b3478824cd8494241bd54c9c18fcf621, type: 3}
   dialogueLines:
   - "Mis sind \xFClikooliaeda toob?"
   - Oled vast eksinud?
@@ -41,12 +41,18 @@ MonoBehaviour:
     - "See ongi \xFClikooliaed?"
     - '*torgi ringi*'
     nextDialogueIndexes: 0200000008000000
+    isPointable: 0
+    correctAnswers: 
   - dialogueIndex: 6
     choices:
     - "Teeme \xE4ra"
     - "Ei saa aidata, peab eksamiteks \xF5ppima"
     nextDialogueIndexes: 0a00000007000000
+    isPointable: 0
+    correctAnswers: 
   - dialogueIndex: 9
     choices:
     - vabandust...
     nextDialogueIndexes: 03000000
+    isPointable: 0
+    correctAnswers: 

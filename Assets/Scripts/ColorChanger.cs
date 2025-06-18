@@ -26,7 +26,7 @@ public class ColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(headObj);
+        // Debug.Log(headObj);
         if (headObj == null)
         {
             GetPlayerSprites();

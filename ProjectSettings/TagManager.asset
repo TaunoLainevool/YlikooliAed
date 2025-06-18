@@ -20,6 +20,14 @@ TagManager:
   - Database
   - "Piparm\xFCndi saladus"
   - Peterselli saladused
+  - Rosemary
+  - Peppermint
+  - Fern
+  - Nickname
+  - Points
+  - Player name input
+  - Player name error
+  - Player name
   layers:
   - Default
   - TransparentFX
