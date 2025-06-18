@@ -16,7 +16,7 @@ public class plantTaker : MonoBehaviour, IInteractible
     GameObject fernPlant;
     public NPC npc;
     private int allPlants = 6;
-    private int gatheredPlants = 5;
+    private int gatheredPlants = 1;
     public bool CanInteract()
     {
         return takesPlants;
