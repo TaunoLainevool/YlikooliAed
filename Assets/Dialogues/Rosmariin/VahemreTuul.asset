@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VahemreTuul
   m_EditorClassIdentifier: 
   npcName: Vahemere Tuul
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 26a86b6f481f00a48b7d1601a52f993d, type: 3}
   dialogueLines:
   - "Oled j\xF5udnud Vahemere tuulde... Ainult need, kes kuulevad muistseid sosinaid,
     leiavad tee t\xF5eni."
@@ -35,8 +35,8 @@ MonoBehaviour:
     - Sest Maarja sinine mantel puudutas mind
     - "Sest p\xE4ike paistis minule kaua peale"
     nextDialogueIndexes: 020000000300000002000000
-    isPointable: 0
-    correctAnswers: 
+    isPointable: 1
+    correctAnswers: 000100
   - dialogueIndex: 2
     choices:
     - Proovi uuesti

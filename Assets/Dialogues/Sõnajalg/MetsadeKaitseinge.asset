@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MetsadeKaitseinge
   m_EditorClassIdentifier: 
   npcName: Metsade Kaitseinge
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 8093fb35e41063a4399f6e5e8ec4ff78, type: 3}
   dialogueLines:
   - "Sa otsid taime, mis ei \xF5itse, eks? Aga tead, \xFCks p\xF5nev asi\u2026"
   - "S\xF5najalad ei kanna lilli ega seemneid \u2013 nende elu algab hoopis v\xE4ikestest

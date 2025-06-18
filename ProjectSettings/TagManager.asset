@@ -16,6 +16,15 @@ TagManager:
   - Movement disabler
   - Head
   - Body
+<<<<<<< Updated upstream
+=======
+  - Lavendli saladus
+  - Database
+  - "Piparm\xFCndi saladus"
+  - Fern
+  - Rosemary
+  - Peppermint
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

@@ -182,15 +182,17 @@ void DisplayCurrentLine(){
 
     void replaceNPC(){
         // Debug.Log(dialogueIndex +" "+ dialogueData.dialogueLines.Length);
-        if(dialogueIndex+1 == dialogueData.dialogueLines.Length){
+        Debug.Log(dialogueIndex+" "+dialogueData.dialogueLines.Length);
+        if (dialogueIndex >= dialogueData.dialogueLines.Length-1)
+        {
             if (replacementNPC == null && replaceableNPC == null)
             {
-                // Debug.Log("There is a nully wully");
+                Debug.Log("There is a nully wully");
                 return;
             }
             else
             {
-                // Debug.Log("No nully wully");
+                Debug.Log("No nully wully");
                 GameObject oldNPC = replaceableNPC;
                 // Debug.Log("oldnpc "+oldNPC);
                 // Debug.Log("replaced");

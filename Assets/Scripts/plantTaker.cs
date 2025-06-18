@@ -67,7 +67,7 @@ public class plantTaker : MonoBehaviour, IInteractible
             }
             Destroy(obtainedPlant);
         }
-        
+
     }
 
     // Start is called before the first frame update
@@ -82,6 +82,6 @@ public class plantTaker : MonoBehaviour, IInteractible
     // Update is called once per frame
     // void Update()
     // {
-        
+
     // }
 }

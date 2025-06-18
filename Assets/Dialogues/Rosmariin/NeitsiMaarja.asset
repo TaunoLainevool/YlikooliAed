@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NeitsiMaarja
   m_EditorClassIdentifier: 
   npcName: Neitsi Maarja
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 8dfc44fa760906b4d9ae73a56b5cc8de, type: 3}
   dialogueLines:
   - "Oled t\xF5estanud, et m\xF5istad rosmariini v\xE4\xE4rtust. V\xF5ta see endaga
     kaasa ja k\xFClva selle seemned maailma tagasi."

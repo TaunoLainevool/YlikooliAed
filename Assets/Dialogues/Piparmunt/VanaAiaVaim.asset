@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VanaAiaVaim
   m_EditorClassIdentifier: 
   npcName: Vana Aia Vaim
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 21300000, guid: 27a8b9f257b7c2548ab5c105c827049a, type: 3}
   dialogueLines:
   - "See aed on teadmiste aed. Kui puudutad kuju, kuuled Kreeka legendi piparm\xFCndist."
   - "Aga enne seda, lase ma annan sulle vihje: See taim, kellest sa kohe kuuled,
