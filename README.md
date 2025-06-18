@@ -9,9 +9,10 @@ Tegemist on Unity ja C# kirjutatud pikselgraafika mänguga.
 
 ## Kasutatud tehnoloogiad
 * Unity 2022.3.6f1
-   * TextMeshPro
-   * WebGL publisher
-   * Input System
+   * Packages
+      * TextMeshPro
+      * WebGL publisher
+      * Input System
    * Renci.SshNet 2020.0.2.0
    * System.Data.SqlClient 4.6.27618.1
    * UnityNpgSQL 2.2.7.0
