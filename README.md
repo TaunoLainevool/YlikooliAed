@@ -24,6 +24,14 @@ Tegemist on Unity ja C# kirjutatud pikselgraafika mänguga.
 4. Nüüd on kõik laetud Unitysse
 5. Ava Unitys Assets --> Scenes
 6. Avage scene, mille kallal soovite tegeleda'
+<details>
+<summary>7. Et andmebaasiga ühendust saada, muuta DBconnection.cs failis leitav andmete fail oma faili asukohaga</summary>
+Fail näeb välja selline
+lin2User=YOURUSER<br>
+lin2Pass=YOURPASS<br>
+greenyUser=YOURGREENYDATABASEUSER<br>
+greenyPass=YOURGREENYDATABASEUSER<br>
+</details>
 
 [Andmebaas](https://github.com/TaunoLainevool/YlikooliAed-admin)
 
