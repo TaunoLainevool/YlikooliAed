@@ -9,4 +9,5 @@ public class Questions
     public string option_c;
     public string option_d;
     public char correct_answer;
+    public string NPC;
 }

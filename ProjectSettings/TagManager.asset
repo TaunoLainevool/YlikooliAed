@@ -28,6 +28,7 @@ TagManager:
   - Player name input
   - Player name error
   - Player name
+  - Viimane Rosmariin
   layers:
   - Default
   - TransparentFX

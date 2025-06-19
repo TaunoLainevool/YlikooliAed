@@ -23,17 +23,23 @@ public class DBNPC : MonoBehaviour, IInteractible
     public GameObject replaceableNPC;
 
     public NPCmovement npcMovement;
+    public string npcName;
+    public Sprite npcSprite;
     MovementDisabler movementDisabler;
 
+    public int[] DbQuestionIndex;
+    
     PointController pointController;
 
     private string optionalText;
 
     private int[] usableDialogues = new int[999];
     private string[] usableDialogueLines=new string[999];
-    private string[][] usableChoices = new string[999][]; 
+    private string[][] usableChoices = new string[999][];
+    
     private int tempIndex;
     private string NPCtag;
+    private int helpMEForGodsSake = 0;
 
     //List<Questions> questionsFromDB = DBconnection.Instance.questionList;
 
@@ -100,7 +106,7 @@ public class DBNPC : MonoBehaviour, IInteractible
         isDialogueActive = true;
         // Debug.Log(isDialogueActive);
         dialogueIndex =index;
-        dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);
+        dialogueUI.SetNPCInfo(npcName, npcSprite);
         dialogueUI.ShowDialogueUI(true);
         movementDisabler.disableMovement();
         DisplayCurrentLine();
@@ -111,7 +117,7 @@ public class DBNPC : MonoBehaviour, IInteractible
         if (isTyping)
         {
             StopAllCoroutines();
-            dialogueUI.SetDialogueText(usableDialogueLines[dialogueIndex]); //dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
+            dialogueUI.SetDialogueText(usableDialogueLines[DbQuestionIndex[dialogueIndex]]); //dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
             isTyping = false;
             // Debug.Log(dialogueData.gameTitle[dialogueIndex]);
             // Debug.Log(dialogueData.choices[dialogueIndex].correctAnswers[0]);
@@ -134,7 +140,7 @@ public class DBNPC : MonoBehaviour, IInteractible
 
         foreach (DialogueChoice dialogueChoice in dialogueData.choices) 
         {
-            if (dialogueChoice.dialogueIndex == usableDialogues[dialogueIndex]/*dialogueIndex*/)
+            if (dialogueChoice.dialogueIndex == usableDialogues[DbQuestionIndex[dialogueIndex]]/*dialogueIndex*/)
             {
                 DisplayChoices(dialogueChoice);
                 return;
@@ -151,7 +157,7 @@ public class DBNPC : MonoBehaviour, IInteractible
     IEnumerator TypeLine() {
         isTyping = true;
         dialogueUI.SetDialogueText("");
-        foreach (char letter in usableDialogueLines[dialogueIndex] /*dialogueData.dialogueLines[dialogueIndex]*/)
+        foreach (char letter in usableDialogueLines[DbQuestionIndex[dialogueIndex]] /*dialogueData.dialogueLines[dialogueIndex]*/)
         {
 
             dialogueUI.SetDialogueText(dialogueUI.dialogueText.text += letter);
@@ -198,8 +204,11 @@ void DisplayChoices(DialogueChoice choice){
 }
 
 void ChooseOption(int nextIndex){
-    if (usableDialogueLines[dialogueIndex+1] == null)
+        helpMEForGodsSake += 1;
+        // if (usableDialogueLines[dialogueIndex+1] == null)
+        if (usableDialogueLines[DbQuestionIndex[dialogueIndex] + 1] == null || helpMEForGodsSake >= DbQuestionIndex.Length)
         {
+            replaceNPC();
             EndDialogue();
             givePlant();
             return;
@@ -238,8 +247,8 @@ void DisplayCurrentLine(){
     void replaceNPC(){
         // Debug.Log(dialogueIndex +" "+ dialogueData.dialogueLines.Length);
         Debug.Log(dialogueIndex+" "+dialogueData.dialogueLines.Length);
-        if (dialogueIndex >= dialogueData.dialogueLines.Length-1)
-        {
+        // if (dialogueIndex >= dialogueData.dialogueLines.Length-1)
+        // {
             if (replacementNPC == null && replaceableNPC == null)
             {
                 Debug.Log("There is a nully wully");
@@ -256,7 +265,7 @@ void DisplayCurrentLine(){
                 oldNPC.SetActive(false);
                 // Debug.Log("old gone");
             }
-        }
+        // }
     }
 
     void givePlant(){

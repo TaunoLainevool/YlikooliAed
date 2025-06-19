@@ -101,6 +101,7 @@ public class DBconnection : MonoBehaviour
                         q.option_b = reader.GetString(reader.GetOrdinal("option_b"));
                         q.option_c = reader.GetString(reader.GetOrdinal("option_c"));
                         q.option_d = reader.GetString(reader.GetOrdinal("option_d"));
+                        q.NPC = reader.GetString(reader.GetOrdinal("NPC"));
 
                         // For the correct_answer, assuming it's a single character stored as string or char in DB
                         string correctAnswerStr = reader.GetString(reader.GetOrdinal("correct_answer"));
@@ -239,7 +240,7 @@ public class DBconnection : MonoBehaviour
                 conn.Open();
                 Console.WriteLine("Connected to PostgreSQL database");
 
-                using (var cmd = new NpgsqlCommand($"INSERT INTO scores (player_name, score, game_mode) VALUES ('{playerName}', {score}, 'normal');", conn))
+                using (var cmd = new NpgsqlCommand($"INSERT INTO scores (player_name, score) VALUES ('{playerName}', {score});", conn))
                 using (var reader = cmd.ExecuteReader())
                 // {
                 //     while (reader.Read())

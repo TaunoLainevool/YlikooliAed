@@ -19,12 +19,13 @@ public class MainMenu : MonoBehaviour
         playerName = GameObject.FindGameObjectWithTag("Player name input").GetComponent<TMP_InputField>();
         if (playerName.text == "")
         {
-            Debug.Log("aa");
+            // Debug.Log("aa");
             playerNameError.transform.GetChild(0).gameObject.SetActive(true);
         }
         else
         {
-            SceneManager.LoadSceneAsync("Game");
+            // SceneManager.LoadSceneAsync("Game");
+            SceneManager.LoadSceneAsync("Game for bs purposes");
         }
         
         
