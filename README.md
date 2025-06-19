@@ -25,6 +25,18 @@ Tegemist on Unity ja C# kirjutatud pikselgraafika mänguga.
 5. Ava Unitys Assets --> Scenes
 6. Avage scene, mille kallal soovite tegeleda
 
+## Pildid
+Peamenüü<br>
+![Screenshot 2025-06-19 115444](https://github.com/user-attachments/assets/8c436ea5-0bd5-49ab-aced-08f7ad6a12de)
+Edetabel<br>
+![edetabel](https://github.com/user-attachments/assets/bb3cfea8-eaa9-4513-8a45-cbc2de411fa2)
+Tegelase isikustamine<br>
+![customization](https://github.com/user-attachments/assets/9fe208a6-0bab-439d-9f44-1fad2f264ec2)
+Mänguala<br>
+![game area](https://github.com/user-attachments/assets/8dc4ed4a-81f7-4659-926b-9ff2e2de62fa)
+Tegelasega rääkimine<br>
+![talking](https://github.com/user-attachments/assets/dffad83f-41f2-4a6e-9403-324842622ca8)
+
 ## Meeskond
 * Ralf Soiela
 * Renat Magsumov
