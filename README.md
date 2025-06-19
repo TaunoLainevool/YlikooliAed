@@ -26,7 +26,7 @@ Tegemist on Unity ja C# kirjutatud pikselgraafika mänguga.
 6. Avage scene, mille kallal soovite tegeleda
 
 ## Meeskond
-Ralf Soiela
-Renat Magsumov
-Tauno Lainevool
-Carl-Eric Sepp
+* Ralf Soiela
+* Renat Magsumov
+* Tauno Lainevool
+* Carl-Eric Sepp
