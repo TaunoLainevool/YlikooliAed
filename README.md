@@ -23,7 +23,9 @@ Tegemist on Unity ja C# kirjutatud pikselgraafika mänguga.
 3. Asendada tühja projekti failid ära allalaetud omadega
 4. Nüüd on kõik laetud Unitysse
 5. Ava Unitys Assets --> Scenes
-6. Avage scene, mille kallal soovite tegeleda
+6. Avage scene, mille kallal soovite tegeleda'
+
+[Andmebaas](https://github.com/TaunoLainevool/YlikooliAed-admin)
 
 ## Pildid
 Peamenüü<br>
